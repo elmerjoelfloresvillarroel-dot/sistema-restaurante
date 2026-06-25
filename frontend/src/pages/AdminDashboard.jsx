@@ -24,11 +24,13 @@ import {
   Calculator,
   FileText,
   Printer,
-  Calendar
+  Calendar,
+  Menu
 } from 'lucide-react';
 
 const AdminDashboard = () => {
   const [vistaActual, setVistaActual] = useState('dashboard');
+  const [menuSidebarAbierto, setMenuSidebarAbierto] = useState(false);
   
   // Datos principales
   const [productos, setProductos] = useState([]);
@@ -1043,15 +1045,29 @@ const AdminDashboard = () => {
   });
 
   return (
-    <div className="h-[calc(100vh-5rem)] flex bg-[#FFF8F0]/30 overflow-hidden font-sans">
+    <div className="h-[calc(100vh-5rem)] md:h-[calc(100vh-7rem)] flex bg-[#FFF8F0]/30 overflow-hidden font-sans relative">
       
       {/* SIDEBAR (250px) */}
-      <aside className="w-64 bg-[#111111] text-stone-300 flex flex-col justify-between shrink-0 shadow-2xl z-10 border-r border-[#FFC107]/10">
+      <aside className={`
+        fixed inset-y-0 left-0 z-30 w-64 bg-[#111111] text-stone-300 flex flex-col justify-between shrink-0 shadow-2xl border-r border-[#FFC107]/10 transition-transform duration-300 ease-in-out
+        md:relative md:translate-x-0
+        ${menuSidebarAbierto ? 'translate-x-0' : '-translate-x-full'}
+      `}>
         <div className="flex flex-col">
+          {/* Header del sidebar en móvil (para cerrar) */}
+          <div className="flex md:hidden items-center justify-between p-4 border-b border-[#FFC107]/10 bg-black/20">
+            <span className="font-black text-xs text-[#FFC107] uppercase tracking-wider">Menú Admin</span>
+            <button 
+              onClick={() => setMenuSidebarAbierto(false)}
+              className="p-1.5 rounded-lg text-stone-400 hover:text-white hover:bg-stone-850"
+            >
+              <X className="w-5 h-5" />
+            </button>
+          </div>
           {/* Menú de navegación */}
           <nav className="p-4 pt-6 space-y-2 flex-1">
             <button
-              onClick={() => setVistaActual('dashboard')}
+              onClick={() => { setVistaActual('dashboard'); setMenuSidebarAbierto(false); }}
               className={`w-full flex items-center gap-3.5 px-4 py-3 rounded-2xl text-sm font-bold transition-all duration-200 ${
                 vistaActual === 'dashboard'
                   ? theme.activeSidebar
@@ -1062,7 +1078,7 @@ const AdminDashboard = () => {
               <span>Dashboard</span>
             </button>
             <button
-              onClick={() => setVistaActual('productos')}
+              onClick={() => { setVistaActual('productos'); setMenuSidebarAbierto(false); }}
               className={`w-full flex items-center gap-3.5 px-4 py-3 rounded-2xl text-sm font-bold transition-all duration-200 ${
                 vistaActual === 'productos'
                   ? theme.activeSidebar
@@ -1073,7 +1089,7 @@ const AdminDashboard = () => {
               <span>Productos</span>
             </button>
             <button
-              onClick={() => setVistaActual('categorias')}
+              onClick={() => { setVistaActual('categorias'); setMenuSidebarAbierto(false); }}
               className={`w-full flex items-center gap-3.5 px-4 py-3 rounded-2xl text-sm font-bold transition-all duration-200 ${
                 vistaActual === 'categorias'
                   ? theme.activeSidebar
@@ -1084,7 +1100,7 @@ const AdminDashboard = () => {
               <span>Categorías</span>
             </button>
             <button
-              onClick={() => setVistaActual('inventario')}
+              onClick={() => { setVistaActual('inventario'); setMenuSidebarAbierto(false); }}
               className={`w-full flex items-center gap-3.5 px-4 py-3 rounded-2xl text-sm font-bold transition-all duration-200 ${
                 vistaActual === 'inventario'
                   ? theme.activeSidebar
@@ -1095,7 +1111,7 @@ const AdminDashboard = () => {
               <span>Inventario</span>
             </button>
             <button
-              onClick={() => setVistaActual('personalizar')}
+              onClick={() => { setVistaActual('personalizar'); setMenuSidebarAbierto(false); }}
               className={`w-full flex items-center gap-3.5 px-4 py-3 rounded-2xl text-sm font-bold transition-all duration-200 ${
                 vistaActual === 'personalizar'
                   ? theme.activeSidebar
@@ -1106,7 +1122,7 @@ const AdminDashboard = () => {
               <span>Personalizar</span>
             </button>
             <button
-              onClick={() => setVistaActual('usuarios')}
+              onClick={() => { setVistaActual('usuarios'); setMenuSidebarAbierto(false); }}
               className={`w-full flex items-center gap-3.5 px-4 py-3 rounded-2xl text-sm font-bold transition-all duration-200 ${
                 vistaActual === 'usuarios'
                   ? theme.activeSidebar
@@ -1117,7 +1133,7 @@ const AdminDashboard = () => {
               <span>Usuarios</span>
             </button>
             <button
-              onClick={() => setVistaActual('extras')}
+              onClick={() => { setVistaActual('extras'); setMenuSidebarAbierto(false); }}
               className={`w-full flex items-center gap-3.5 px-4 py-3 rounded-2xl text-sm font-bold transition-all duration-200 ${
                 vistaActual === 'extras'
                   ? theme.activeSidebar
@@ -1128,7 +1144,7 @@ const AdminDashboard = () => {
               <span>Adicionales (Extras)</span>
             </button>
             <button
-              onClick={() => setVistaActual('cierres')}
+              onClick={() => { setVistaActual('cierres'); setMenuSidebarAbierto(false); }}
               className={`w-full flex items-center gap-3.5 px-4 py-3 rounded-2xl text-sm font-bold transition-all duration-200 ${
                 vistaActual === 'cierres'
                   ? theme.activeSidebar
@@ -1147,8 +1163,32 @@ const AdminDashboard = () => {
         </div>
       </aside>
 
+      {/* Backdrop para móvil */}
+      {menuSidebarAbierto && (
+        <div 
+          onClick={() => setMenuSidebarAbierto(false)} 
+          className="fixed inset-0 bg-black/55 backdrop-blur-xs z-20 md:hidden"
+        />
+      )}
+
       {/* ÁREA PRINCIPAL */}
-      <main className="flex-1 flex flex-col overflow-hidden">
+      <main className="flex-1 flex flex-col overflow-hidden relative">
+        
+        {/* Barra superior de navegación en móvil */}
+        <div className="flex md:hidden items-center justify-between px-6 py-4 bg-[#111111] text-stone-300 border-b border-[#FFC107]/10 z-10 shrink-0">
+          <div className="flex items-center gap-3">
+            <button
+              onClick={() => setMenuSidebarAbierto(true)}
+              className="p-2 rounded-xl bg-stone-900 border border-stone-800 text-white hover:bg-stone-850 transition-all active:scale-95 shadow-md flex items-center justify-center"
+              aria-label="Abrir menú"
+            >
+              <Menu className="w-5 h-5 text-[#FFC107]" />
+            </button>
+            <span className="font-extrabold text-xs uppercase tracking-wider text-white flex items-center gap-1.5">
+              Panel: <span className="text-[#FFC107]">{vistaActual.toUpperCase()}</span>
+            </span>
+          </div>
+        </div>
         
         {/* Loading overlay */}
         {loading && (
@@ -1478,12 +1518,12 @@ const AdminDashboard = () => {
                   />
                 </div>
 
-                <div className="flex items-center gap-3.5 w-full md:w-auto">
+                <div className="flex flex-wrap items-center gap-3.5 w-full md:w-auto">
                   <span className="text-xs font-black text-[#111111]/70 uppercase tracking-widest whitespace-nowrap">Filtrar Categoría:</span>
                   <select
                     value={filtroCategoria}
                     onChange={(e) => setFiltroCategoria(e.target.value)}
-                    className="bg-white border border-[#E5E5E5] focus:border-[#B71C1C] focus:ring-4 focus:ring-[#B71C1C]/5 rounded-2xl p-3 text-xs font-bold text-[#111111] transition-all focus:outline-none cursor-pointer"
+                    className="w-full sm:w-auto bg-white border border-[#E5E5E5] focus:border-[#B71C1C] focus:ring-4 focus:ring-[#B71C1C]/5 rounded-2xl p-3 text-xs font-bold text-[#111111] transition-all focus:outline-none cursor-pointer"
                   >
                     <option value="Todas">Todas</option>
                     {categorias.map(cat => (
@@ -2333,22 +2373,22 @@ const AdminDashboard = () => {
                     className="w-full pl-10 pr-4 py-3 bg-[#FFF8F0]/20 border border-[#E5E5E5] focus:border-[#B71C1C] focus:ring-4 focus:ring-[#B71C1C]/5 rounded-2xl text-xs font-semibold text-[#111111] focus:outline-none"
                   />
                 </div>
-                <div className="flex items-center gap-2.5 w-full md:w-auto">
+                <div className="flex flex-wrap items-center gap-2.5 w-full md:w-auto">
                   <span className="text-xs text-stone-450 font-black uppercase tracking-wider whitespace-nowrap">Desde:</span>
                   <input
                     type="date"
                     value={filtroCierreFechaInicio}
                     onChange={(e) => setFiltroCierreFechaInicio(e.target.value)}
-                    className="px-4 py-3 bg-white border border-[#E5E5E5] rounded-2xl text-xs font-bold text-stone-750 focus:outline-none cursor-pointer"
+                    className="w-full sm:w-auto px-4 py-3 bg-white border border-[#E5E5E5] rounded-2xl text-xs font-bold text-stone-750 focus:outline-none cursor-pointer"
                   />
                 </div>
-                <div className="flex items-center gap-2.5 w-full md:w-auto">
+                <div className="flex flex-wrap items-center gap-2.5 w-full md:w-auto">
                   <span className="text-xs text-stone-450 font-black uppercase tracking-wider whitespace-nowrap">Hasta:</span>
                   <input
                     type="date"
                     value={filtroCierreFechaFin}
                     onChange={(e) => setFiltroCierreFechaFin(e.target.value)}
-                    className="px-4 py-3 bg-white border border-[#E5E5E5] rounded-2xl text-xs font-bold text-stone-750 focus:outline-none cursor-pointer"
+                    className="w-full sm:w-auto px-4 py-3 bg-white border border-[#E5E5E5] rounded-2xl text-xs font-bold text-stone-750 focus:outline-none cursor-pointer"
                   />
                 </div>
                 {(filtroCierreFechaInicio || filtroCierreFechaFin || busquedaCierre) && (
@@ -3049,7 +3089,7 @@ const AdminDashboard = () => {
               {/* Movimientos del Turno */}
               <div className="space-y-3">
                 <h4 className="text-xs font-black text-[#111111] uppercase tracking-widest border-b border-stone-150 pb-2 font-serif">Registro de Movimientos</h4>
-                <div className="border border-[#E5E5E5] rounded-3xl overflow-hidden shadow-xs">
+                <div className="border border-[#E5E5E5] rounded-3xl overflow-x-auto shadow-xs">
                   <table className="w-full text-left border-collapse text-xs">
                     <thead>
                       <tr className="bg-[#111111] text-[#FFC107] border-b border-[#FFC107]/20 font-black uppercase text-[10px] tracking-wider">
@@ -3195,7 +3235,7 @@ const AdminDashboard = () => {
                   <h4 className="text-xs font-black text-[#111111] uppercase tracking-widest font-serif">Productos con Mayor Ingreso Generado</h4>
                   <span className="text-[9px] bg-[#FFF3E0] text-[#FF9800] border border-[#FFC107]/30 px-3 py-1 rounded-full font-black uppercase tracking-wider">Top Ventas</span>
                 </div>
-                <div className="border border-[#E5E5E5] rounded-3xl overflow-hidden shadow-xs">
+                <div className="border border-[#E5E5E5] rounded-3xl overflow-x-auto shadow-xs">
                   <table className="w-full text-left border-collapse text-xs">
                     <thead>
                       <tr className="bg-[#111111] text-[#FFC107] border-b border-[#FFC107]/20 font-black uppercase text-[10px] tracking-wider">

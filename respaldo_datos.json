@@ -143,7 +143,7 @@
     "pk": 15,
     "fields": {
         "nombre": "Pollo a la Broaster Especial",
-        "descripcion": "Crujientes piezas de pollo frito con nuestra receta secreta, acompaÒadas de papas fritas y ensalada fresca.",
+        "descripcion": "Crujientes piezas de pollo frito con nuestra receta secreta, acompa√±adas de papas fritas y ensalada fresca.",
         "precio": "35.00",
         "fotografia": "productos/pollo_a_la_broaster_especial.jpg",
         "categoria": 9,
@@ -156,7 +156,7 @@
     "pk": 16,
     "fields": {
         "nombre": "Pollo a la Lena Familiar",
-        "descripcion": "Pollo entero marinado a las brasas de leÒa, servido con arroz chaufa, papas y salsas de la casa.",
+        "descripcion": "Pollo entero marinado a las brasas de le√±a, servido con arroz chaufa, papas y salsas de la casa.",
         "precio": "80.00",
         "fotografia": "productos/pollo_a_la_lena_familiar.jpg",
         "categoria": 9,
@@ -169,7 +169,7 @@
     "pk": 17,
     "fields": {
         "nombre": "Hamburguesa Doble Queso y Tocino",
-        "descripcion": "Doble carne premium (150g c/u), doble porciÛn de queso cheddar fundido, tocino ahumado crujiente y aderezo especial.",
+        "descripcion": "Doble carne premium (150g c/u), doble porci√≥n de queso cheddar fundido, tocino ahumado crujiente y aderezo especial.",
         "precio": "42.00",
         "fotografia": "productos/hamburguesa_doble_queso_y_tocino.jpg",
         "categoria": 10,
@@ -182,7 +182,7 @@
     "pk": 18,
     "fields": {
         "nombre": "Hamburguesa Clasica Simple",
-        "descripcion": "Carne premium de res a la parrilla, lechuga fresca, rodajas de tomate, cebolla morada y salsas cl·sicas.",
+        "descripcion": "Carne premium de res a la parrilla, lechuga fresca, rodajas de tomate, cebolla morada y salsas cl√°sicas.",
         "precio": "25.00",
         "fotografia": "productos/hamburguesa_clasica_simple.jpg",
         "categoria": 10,
@@ -195,7 +195,7 @@
     "pk": 19,
     "fields": {
         "nombre": "Hamburguesa Super Bacon Monster",
-        "descripcion": "Nuestra hamburguesa m·s grande: triple carne, triple queso, abundante tocino y huevo frito. °Solo para valientes!",
+        "descripcion": "Nuestra hamburguesa m√°s grande: triple carne, triple queso, abundante tocino y huevo frito. ¬°Solo para valientes!",
         "precio": "55.00",
         "fotografia": "productos/hamburguesa_super_bacon_monster.jpg",
         "categoria": 10,
@@ -221,7 +221,7 @@
     "pk": 21,
     "fields": {
         "nombre": "Lomito Montado Familiar",
-        "descripcion": "Doble porciÛn de lomito de res a la plancha, servido al plato con arroz, papas fritas, pl·tano frito y dos huevos.",
+        "descripcion": "Doble porci√≥n de lomito de res a la plancha, servido al plato con arroz, papas fritas, pl√°tano frito y dos huevos.",
         "precio": "95.00",
         "fotografia": "productos/lomito_montado_familiar.jpg",
         "categoria": 11,
@@ -247,7 +247,7 @@
     "pk": 23,
     "fields": {
         "nombre": "Jugo Natural de Maracuya 1L",
-        "descripcion": "Jugo natural concentrado de fruta de la pasiÛn fresca, endulzado al gusto y servido bien frÌo.",
+        "descripcion": "Jugo natural concentrado de fruta de la pasi√≥n fresca, endulzado al gusto y servido bien fr√≠o.",
         "precio": "18.00",
         "fotografia": "productos/jugo_natural_de_maracuya_1l.jpg",
         "categoria": 12,
@@ -273,7 +273,7 @@
     "pk": 25,
     "fields": {
         "nombre": "alitas de pollo doble con salsa",
-        "descripcion": "Crujientes y jugosas alitas de pollo baÒadas en tu salsa favorita, acompaÒadas de una porciÛn de papas fritas doradas. °El antojo perfecto!",
+        "descripcion": "Crujientes y jugosas alitas de pollo ba√±adas en tu salsa favorita, acompa√±adas de una porci√≥n de papas fritas doradas. ¬°El antojo perfecto!",
         "precio": "30.00",
         "fotografia": "productos/alitas_de_pollo_cBSJS5T.jpg",
         "categoria": 9,
@@ -286,7 +286,7 @@
     "pk": 26,
     "fields": {
         "nombre": "pipocas de pollo",
-        "descripcion": "Crujientes trocitos de pechuga de pollo fritos, servidos en canasta acompaÒados de papas fritas doradas y una deliciosa salsa para untar.",
+        "descripcion": "Crujientes trocitos de pechuga de pollo fritos, servidos en canasta acompa√±ados de papas fritas doradas y una deliciosa salsa para untar.",
         "precio": "23.00",
         "fotografia": "productos/pipocas_de_pollo.jpg",
         "categoria": 9,
@@ -299,7 +299,7 @@
     "pk": 27,
     "fields": {
         "nombre": "Salchipapa",
-        "descripcion": "Una cl·sica y generosa porciÛn de papas fritas crujientes combinadas con rodajas de salchicha dorada, baÒadas con hilos de c·tsup, mostaza y mayonesa.",
+        "descripcion": "Una cl√°sica y generosa porci√≥n de papas fritas crujientes combinadas con rodajas de salchicha dorada, ba√±adas con hilos de c√°tsup, mostaza y mayonesa.",
         "precio": "15.00",
         "fotografia": "productos/salchipapa.jpg",
         "categoria": 14,
@@ -312,7 +312,7 @@
     "pk": 28,
     "fields": {
         "nombre": "Salchipollo",
-        "descripcion": "Una contundente combinaciÛn de papas fritas crujientes y abundante salchicha dorada, acompaÒada de jugosos trozos de pollo frito crujiente.",
+        "descripcion": "Una contundente combinaci√≥n de papas fritas crujientes y abundante salchicha dorada, acompa√±ada de jugosos trozos de pollo frito crujiente.",
         "precio": "25.00",
         "fotografia": "productos/salchipollo.jpg",
         "categoria": 9,
@@ -325,7 +325,7 @@
     "pk": 29,
     "fields": {
         "nombre": "hamburguesa simple",
-        "descripcion": "El sabor cl·sico e infalible: una jugosa carne a la parrilla con queso derretido, huevo frito, lechuga y tomate frescos, servida con una deliciosa guarniciÛn de salchipapa crujiente.",
+        "descripcion": "El sabor cl√°sico e infalible: una jugosa carne a la parrilla con queso derretido, huevo frito, lechuga y tomate frescos, servida con una deliciosa guarnici√≥n de salchipapa crujiente.",
         "precio": "15.00",
         "fotografia": "productos/hamburguesa_simple.jpg",
         "categoria": 10,
@@ -338,7 +338,7 @@
     "pk": 30,
     "fields": {
         "nombre": "Recohamburguesa",
-        "descripcion": "La m·xima especialidad: doble carne premium a la parrilla con huevo frito, queso mozzarella fundido, tocino crujiente, lechuga y tomate frescos, acompaÒada de una generosa porciÛn de salchipapa con aderezos al lado.",
+        "descripcion": "La m√°xima especialidad: doble carne premium a la parrilla con huevo frito, queso mozzarella fundido, tocino crujiente, lechuga y tomate frescos, acompa√±ada de una generosa porci√≥n de salchipapa con aderezos al lado.",
         "precio": "30.00",
         "fotografia": "productos/recohamburguesa.jpg",
         "categoria": 10,
@@ -545,10 +545,10 @@
     "model": "api.producto",
     "pk": 46,
     "fields": {
-        "nombre": "Cerveza PaceÒa Macanuda",
+        "nombre": "Cerveza Pace√±a Macanuda",
         "descripcion": "",
         "precio": "18.00",
-        "fotografia": "productos/paceÒa.jpg",
+        "fotografia": "productos/pace√±a.jpg",
         "categoria": 12,
         "disponible": true,
         "controla_stock": true
@@ -2263,7 +2263,7 @@
     "fields": {
         "nombre": "Evelin Carrizales",
         "telefono": "67798921",
-        "direccion": "Barrio Villa Esperanza calle los Cedros esquina array·n"
+        "direccion": "Barrio Villa Esperanza calle los Cedros esquina array√°n"
     }
 },
 {
@@ -2601,7 +2601,7 @@
     "model": "api.extra",
     "pk": 7,
     "fields": {
-        "nombre": "salsas -miel de mostaza - barbacoa - b˙falo",
+        "nombre": "salsas -miel de mostaza - barbacoa - b√∫falo",
         "precio": "5.00"
     }
 },
@@ -2626,7 +2626,7 @@
     "fields": {
         "cajero": "jose",
         "fecha_cierre": "2026-06-24T22:14:38.847Z",
-        "turno_descripcion": "Turno maÒana - 24/06/2026",
+        "turno_descripcion": "Turno ma√±ana - 24/06/2026",
         "fondo_inicial": "266.00",
         "total_efectivo": "55.00",
         "total_qr": "46.00",

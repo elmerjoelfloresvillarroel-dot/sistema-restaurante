@@ -127,20 +127,20 @@ const Navbar = () => {
       className={`${!isCocina ? 'text-white' : theme.nav} shadow-md select-none transition-all duration-300 relative z-40`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className={`flex justify-between items-center ${isAdminPage ? 'h-28' : 'h-20'}`}>
+        <div className={`flex justify-between items-center ${isAdminPage ? 'h-20 md:h-28' : 'h-20'}`}>
           
           {/* Logo / Brand & Status Pill */}
           {isAdminPage ? (
-            <div className="flex items-center gap-6">
-              <Link to="/admin" className="flex items-center gap-4.5 group">
-                <div className="w-16 h-16 rounded-2xl flex items-center justify-center transition-all duration-300 shadow-sm border border-[#FFC107]/40 bg-black/30 group-hover:bg-black/40 group-hover:scale-105">
-                  <TrendingUp className="w-8 h-8 text-[#FFC107] drop-shadow-md" />
+            <div className="flex items-center gap-3 md:gap-6">
+              <Link to="/admin" className="flex items-center gap-2 md:gap-4.5 group">
+                <div className="w-10 h-10 md:w-16 md:h-16 rounded-xl md:rounded-2xl flex items-center justify-center transition-all duration-300 shadow-sm border border-[#FFC107]/40 bg-black/30 group-hover:bg-black/40 group-hover:scale-105">
+                  <TrendingUp className="w-5 h-5 md:w-8 md:h-8 text-[#FFC107] drop-shadow-md" />
                 </div>
                 <div className="flex flex-col text-left">
-                  <span className="font-black text-white text-2xl tracking-widest uppercase font-serif drop-shadow-sm">
+                  <span className="font-black text-white text-base md:text-2xl tracking-widest uppercase font-serif drop-shadow-sm">
                     LA RECONCILIACIÓN
                   </span>
-                  <span className="text-xs text-[#FFC107] font-black uppercase tracking-wider opacity-90 mt-0.5">
+                  <span className="text-[9px] md:text-xs text-[#FFC107] font-black uppercase tracking-wider opacity-90 mt-0.5">
                     Panel de Control
                   </span>
                 </div>
@@ -206,14 +206,14 @@ const Navbar = () => {
               </Link>
             </div>
           ) : isAdminPage ? (
-            <div className="flex items-center gap-3 font-bold select-none animate-in fade-in duration-300">
-              <div className="flex items-center gap-3">
+            <div className="flex items-center gap-2 md:gap-3 font-bold select-none animate-in fade-in duration-300">
+              <div className="flex items-center gap-2 md:gap-3">
                 {/* User Profile Card */}
-                <div className="flex items-center gap-3 px-3.5 py-2 rounded-xl border border-[#FFC107]/30 text-white bg-black/25">
-                  <div className="w-9 h-9 rounded-full flex items-center justify-center font-black text-sm select-none shadow-sm bg-[#FFC107] text-[#111111]">
+                <div className="flex items-center gap-2 md:gap-3 px-2 py-1.5 md:px-3.5 md:py-2 rounded-xl border border-[#FFC107]/30 text-white bg-black/25">
+                  <div className="w-8 h-8 md:w-9 md:h-9 rounded-full flex items-center justify-center font-black text-xs md:text-sm select-none shadow-sm bg-[#FFC107] text-[#111111]">
                     {user?.username ? user.username.charAt(0).toUpperCase() : 'A'}
                   </div>
-                  <div className="flex flex-col text-left max-w-[140px]">
+                  <div className="hidden md:flex flex-col text-left max-w-[140px]">
                     <span className="text-sm font-black tracking-wide truncate text-white">
                       {user?.username || 'Administrador'}
                     </span>
@@ -226,11 +226,10 @@ const Navbar = () => {
                 {/* Salir Button */}
                 <button 
                   onClick={handleLogout}
-                  className="flex items-center gap-2 px-4.5 py-2.5 rounded-xl transition-all duration-300 text-xs font-black shadow-md bg-[#FFC107] hover:bg-amber-400 text-[#111111] hover:scale-102 active:scale-95 border border-[#FFC107]/50 whitespace-nowrap"
+                  className="flex items-center gap-2 px-3 py-2 md:px-4.5 md:py-2.5 rounded-xl transition-all duration-300 text-xs font-black shadow-md bg-[#FFC107] hover:bg-amber-400 text-[#111111] hover:scale-102 active:scale-95 border border-[#FFC107]/50 whitespace-nowrap"
                 >
                   <Power className="w-4 h-4 text-[#111111] stroke-[2.5]" />
-                  <span className="hidden sm:inline">Cerrar Sesión</span>
-                  <span className="sm:hidden">Salir</span>
+                  <span className="hidden md:inline">Cerrar Sesión</span>
                 </button>
               </div>
             </div>
