@@ -1,0 +1,2694 @@
+[
+{
+    "model": "api.rol",
+    "pk": 1,
+    "fields": {
+        "nombre": "Administrador"
+    }
+},
+{
+    "model": "api.rol",
+    "pk": 2,
+    "fields": {
+        "nombre": "Cajero"
+    }
+},
+{
+    "model": "api.rol",
+    "pk": 3,
+    "fields": {
+        "nombre": "Cocina"
+    }
+},
+{
+    "model": "api.usuario",
+    "fields": {
+        "password": "pbkdf2_sha256$1200000$BkLBY5xNqgkMxsiPdd5lMM$SzrCzu4v7+6Fp38hdfN4VpZp6to03hHjLULGtPGmqAI=",
+        "last_login": null,
+        "is_superuser": true,
+        "username": "admin",
+        "first_name": "",
+        "last_name": "",
+        "email": "admin@example.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2026-06-04T14:14:51.857Z",
+        "estado": true,
+        "rol": 1,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "api.usuario",
+    "fields": {
+        "password": "pbkdf2_sha256$1200000$vuBBz21jVwOluVDgbOQLlp$BaSR3j3jqz7d16e6BQXOsr2GAPC34bSUUw61nhUPK+g=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "cajero",
+        "first_name": "",
+        "last_name": "",
+        "email": "cajero@example.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2026-06-04T14:14:52.480Z",
+        "estado": true,
+        "rol": 2,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "api.usuario",
+    "fields": {
+        "password": "pbkdf2_sha256$1200000$AmqcAGCtF8PYWkX97mdfNJ$poohuMX89/1Lg5s9K7k4X2uFwwYhYgROqhmAw+kftKs=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "admin1",
+        "first_name": "",
+        "last_name": "",
+        "email": "elmer@gmail.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2026-06-11T03:36:43.124Z",
+        "estado": true,
+        "rol": 1,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "api.usuario",
+    "fields": {
+        "password": "pbkdf2_sha256$1200000$jyiGNVKNG59SuALR9McHO4$8wYlYB8hOKSMWV0fNWNsYjlXp5LpHUV7WMlQ1k/BN4M=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "cocina",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2026-06-24T14:02:00.198Z",
+        "estado": true,
+        "rol": 3,
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "api.categoria",
+    "pk": 9,
+    "fields": {
+        "nombre": "Pollos"
+    }
+},
+{
+    "model": "api.categoria",
+    "pk": 10,
+    "fields": {
+        "nombre": "Hamburguesas"
+    }
+},
+{
+    "model": "api.categoria",
+    "pk": 11,
+    "fields": {
+        "nombre": "Lomitos"
+    }
+},
+{
+    "model": "api.categoria",
+    "pk": 12,
+    "fields": {
+        "nombre": "Bebidas"
+    }
+},
+{
+    "model": "api.categoria",
+    "pk": 13,
+    "fields": {
+        "nombre": "Refrescos"
+    }
+},
+{
+    "model": "api.categoria",
+    "pk": 14,
+    "fields": {
+        "nombre": "Salchipapa"
+    }
+},
+{
+    "model": "api.producto",
+    "pk": 15,
+    "fields": {
+        "nombre": "Pollo a la Broaster Especial",
+        "descripcion": "Crujientes piezas de pollo frito con nuestra receta secreta, acompañadas de papas fritas y ensalada fresca.",
+        "precio": "35.00",
+        "fotografia": "productos/pollo_a_la_broaster_especial.jpg",
+        "categoria": 9,
+        "disponible": true,
+        "controla_stock": false
+    }
+},
+{
+    "model": "api.producto",
+    "pk": 16,
+    "fields": {
+        "nombre": "Pollo a la Lena Familiar",
+        "descripcion": "Pollo entero marinado a las brasas de leña, servido con arroz chaufa, papas y salsas de la casa.",
+        "precio": "80.00",
+        "fotografia": "productos/pollo_a_la_lena_familiar.jpg",
+        "categoria": 9,
+        "disponible": true,
+        "controla_stock": false
+    }
+},
+{
+    "model": "api.producto",
+    "pk": 17,
+    "fields": {
+        "nombre": "Hamburguesa Doble Queso y Tocino",
+        "descripcion": "Doble carne premium (150g c/u), doble porción de queso cheddar fundido, tocino ahumado crujiente y aderezo especial.",
+        "precio": "42.00",
+        "fotografia": "productos/hamburguesa_doble_queso_y_tocino.jpg",
+        "categoria": 10,
+        "disponible": true,
+        "controla_stock": false
+    }
+},
+{
+    "model": "api.producto",
+    "pk": 18,
+    "fields": {
+        "nombre": "Hamburguesa Clasica Simple",
+        "descripcion": "Carne premium de res a la parrilla, lechuga fresca, rodajas de tomate, cebolla morada y salsas clásicas.",
+        "precio": "25.00",
+        "fotografia": "productos/hamburguesa_clasica_simple.jpg",
+        "categoria": 10,
+        "disponible": true,
+        "controla_stock": false
+    }
+},
+{
+    "model": "api.producto",
+    "pk": 19,
+    "fields": {
+        "nombre": "Hamburguesa Super Bacon Monster",
+        "descripcion": "Nuestra hamburguesa más grande: triple carne, triple queso, abundante tocino y huevo frito. ¡Solo para valientes!",
+        "precio": "55.00",
+        "fotografia": "productos/hamburguesa_super_bacon_monster.jpg",
+        "categoria": 10,
+        "disponible": false,
+        "controla_stock": false
+    }
+},
+{
+    "model": "api.producto",
+    "pk": 20,
+    "fields": {
+        "nombre": "Lomito Especial con Queso y Huevo",
+        "descripcion": "Fino filete de lomo de res salteado con cebollas y pimientos, cubierto con queso fundido y huevo frito en pan especial.",
+        "precio": "48.00",
+        "fotografia": "productos/lomito_especial_con_queso_y_huevo.jpg",
+        "categoria": 11,
+        "disponible": true,
+        "controla_stock": false
+    }
+},
+{
+    "model": "api.producto",
+    "pk": 21,
+    "fields": {
+        "nombre": "Lomito Montado Familiar",
+        "descripcion": "Doble porción de lomito de res a la plancha, servido al plato con arroz, papas fritas, plátano frito y dos huevos.",
+        "precio": "95.00",
+        "fotografia": "productos/lomito_montado_familiar.jpg",
+        "categoria": 11,
+        "disponible": true,
+        "controla_stock": false
+    }
+},
+{
+    "model": "api.producto",
+    "pk": 22,
+    "fields": {
+        "nombre": "Gaseosa Coca-Cola 2L",
+        "descripcion": "Refrescante gaseosa familiar sabor original helada de 2 litros, ideal para compartir.",
+        "precio": "15.00",
+        "fotografia": "productos/gaseosa_coca-cola_2l.jpg",
+        "categoria": 12,
+        "disponible": true,
+        "controla_stock": false
+    }
+},
+{
+    "model": "api.producto",
+    "pk": 23,
+    "fields": {
+        "nombre": "Jugo Natural de Maracuya 1L",
+        "descripcion": "Jugo natural concentrado de fruta de la pasión fresca, endulzado al gusto y servido bien frío.",
+        "precio": "18.00",
+        "fotografia": "productos/jugo_natural_de_maracuya_1l.jpg",
+        "categoria": 12,
+        "disponible": true,
+        "controla_stock": false
+    }
+},
+{
+    "model": "api.producto",
+    "pk": 24,
+    "fields": {
+        "nombre": "Fanta Naranja 2L",
+        "descripcion": "",
+        "precio": "12.00",
+        "fotografia": "",
+        "categoria": 13,
+        "disponible": false,
+        "controla_stock": true
+    }
+},
+{
+    "model": "api.producto",
+    "pk": 25,
+    "fields": {
+        "nombre": "alitas de pollo doble con salsa",
+        "descripcion": "Crujientes y jugosas alitas de pollo bañadas en tu salsa favorita, acompañadas de una porción de papas fritas doradas. ¡El antojo perfecto!",
+        "precio": "30.00",
+        "fotografia": "productos/alitas_de_pollo_cBSJS5T.jpg",
+        "categoria": 9,
+        "disponible": true,
+        "controla_stock": false
+    }
+},
+{
+    "model": "api.producto",
+    "pk": 26,
+    "fields": {
+        "nombre": "pipocas de pollo",
+        "descripcion": "Crujientes trocitos de pechuga de pollo fritos, servidos en canasta acompañados de papas fritas doradas y una deliciosa salsa para untar.",
+        "precio": "23.00",
+        "fotografia": "productos/pipocas_de_pollo.jpg",
+        "categoria": 9,
+        "disponible": true,
+        "controla_stock": false
+    }
+},
+{
+    "model": "api.producto",
+    "pk": 27,
+    "fields": {
+        "nombre": "Salchipapa",
+        "descripcion": "Una clásica y generosa porción de papas fritas crujientes combinadas con rodajas de salchicha dorada, bañadas con hilos de cátsup, mostaza y mayonesa.",
+        "precio": "15.00",
+        "fotografia": "productos/salchipapa.jpg",
+        "categoria": 14,
+        "disponible": true,
+        "controla_stock": false
+    }
+},
+{
+    "model": "api.producto",
+    "pk": 28,
+    "fields": {
+        "nombre": "Salchipollo",
+        "descripcion": "Una contundente combinación de papas fritas crujientes y abundante salchicha dorada, acompañada de jugosos trozos de pollo frito crujiente.",
+        "precio": "25.00",
+        "fotografia": "productos/salchipollo.jpg",
+        "categoria": 9,
+        "disponible": true,
+        "controla_stock": false
+    }
+},
+{
+    "model": "api.producto",
+    "pk": 29,
+    "fields": {
+        "nombre": "hamburguesa simple",
+        "descripcion": "El sabor clásico e infalible: una jugosa carne a la parrilla con queso derretido, huevo frito, lechuga y tomate frescos, servida con una deliciosa guarnición de salchipapa crujiente.",
+        "precio": "15.00",
+        "fotografia": "productos/hamburguesa_simple.jpg",
+        "categoria": 10,
+        "disponible": true,
+        "controla_stock": false
+    }
+},
+{
+    "model": "api.producto",
+    "pk": 30,
+    "fields": {
+        "nombre": "Recohamburguesa",
+        "descripcion": "La máxima especialidad: doble carne premium a la parrilla con huevo frito, queso mozzarella fundido, tocino crujiente, lechuga y tomate frescos, acompañada de una generosa porción de salchipapa con aderezos al lado.",
+        "precio": "30.00",
+        "fotografia": "productos/recohamburguesa.jpg",
+        "categoria": 10,
+        "disponible": true,
+        "controla_stock": false
+    }
+},
+{
+    "model": "api.producto",
+    "pk": 31,
+    "fields": {
+        "nombre": "coca-cola de 2 litros",
+        "descripcion": "",
+        "precio": "16.00",
+        "fotografia": "productos/coca-cola-2l.webp",
+        "categoria": 12,
+        "disponible": true,
+        "controla_stock": true
+    }
+},
+{
+    "model": "api.producto",
+    "pk": 32,
+    "fields": {
+        "nombre": "Coca-Cola personal",
+        "descripcion": "",
+        "precio": "7.00",
+        "fotografia": "productos/Coca-Cola-personal.webp",
+        "categoria": 12,
+        "disponible": true,
+        "controla_stock": true
+    }
+},
+{
+    "model": "api.producto",
+    "pk": 33,
+    "fields": {
+        "nombre": "Coca-Cola Mini",
+        "descripcion": "",
+        "precio": "4.00",
+        "fotografia": "productos/mini.webp",
+        "categoria": 12,
+        "disponible": true,
+        "controla_stock": true
+    }
+},
+{
+    "model": "api.producto",
+    "pk": 34,
+    "fields": {
+        "nombre": "Coca - Cola de 3L",
+        "descripcion": "",
+        "precio": "20.00",
+        "fotografia": "productos/3L.webp",
+        "categoria": 12,
+        "disponible": true,
+        "controla_stock": true
+    }
+},
+{
+    "model": "api.producto",
+    "pk": 35,
+    "fields": {
+        "nombre": "Fanta de 3L",
+        "descripcion": "Pide tu Fanta del sabor que quieras",
+        "precio": "20.00",
+        "fotografia": "productos/Fanta.png",
+        "categoria": 12,
+        "disponible": true,
+        "controla_stock": true
+    }
+},
+{
+    "model": "api.producto",
+    "pk": 36,
+    "fields": {
+        "nombre": "Fanta de 2L",
+        "descripcion": "",
+        "precio": "16.00",
+        "fotografia": "productos/Fanta2L.jpg",
+        "categoria": 12,
+        "disponible": true,
+        "controla_stock": true
+    }
+},
+{
+    "model": "api.producto",
+    "pk": 37,
+    "fields": {
+        "nombre": "Fanta Peque",
+        "descripcion": "",
+        "precio": "4.00",
+        "fotografia": "productos/fanta_peque.jpg",
+        "categoria": 12,
+        "disponible": true,
+        "controla_stock": true
+    }
+},
+{
+    "model": "api.producto",
+    "pk": 38,
+    "fields": {
+        "nombre": "Fanta personal",
+        "descripcion": "",
+        "precio": "6.00",
+        "fotografia": "productos/Fanta_personal.webp",
+        "categoria": 12,
+        "disponible": true,
+        "controla_stock": true
+    }
+},
+{
+    "model": "api.producto",
+    "pk": 39,
+    "fields": {
+        "nombre": "Sprite  de 2L",
+        "descripcion": "",
+        "precio": "16.00",
+        "fotografia": "productos/sprite.webp",
+        "categoria": 12,
+        "disponible": true,
+        "controla_stock": true
+    }
+},
+{
+    "model": "api.producto",
+    "pk": 40,
+    "fields": {
+        "nombre": "Sprite  de 3L",
+        "descripcion": "",
+        "precio": "20.00",
+        "fotografia": "productos/sprite3L.webp",
+        "categoria": 12,
+        "disponible": true,
+        "controla_stock": true
+    }
+},
+{
+    "model": "api.producto",
+    "pk": 41,
+    "fields": {
+        "nombre": "Sprite peque",
+        "descripcion": "",
+        "precio": "4.00",
+        "fotografia": "productos/sprite_peque.webp",
+        "categoria": 12,
+        "disponible": true,
+        "controla_stock": true
+    }
+},
+{
+    "model": "api.producto",
+    "pk": 42,
+    "fields": {
+        "nombre": "Sprite Personal",
+        "descripcion": "",
+        "precio": "6.00",
+        "fotografia": "productos/sprite_personal.webp",
+        "categoria": 12,
+        "disponible": true,
+        "controla_stock": true
+    }
+},
+{
+    "model": "api.producto",
+    "pk": 43,
+    "fields": {
+        "nombre": "Tropi popural",
+        "descripcion": "",
+        "precio": "6.00",
+        "fotografia": "productos/tropi_popular.png",
+        "categoria": 12,
+        "disponible": true,
+        "controla_stock": true
+    }
+},
+{
+    "model": "api.producto",
+    "pk": 44,
+    "fields": {
+        "nombre": "Del Valle de 3L",
+        "descripcion": "",
+        "precio": "22.00",
+        "fotografia": "productos/del_valle_durazno_3l.webp",
+        "categoria": 12,
+        "disponible": true,
+        "controla_stock": true
+    }
+},
+{
+    "model": "api.producto",
+    "pk": 45,
+    "fields": {
+        "nombre": "Del Valle de 2L",
+        "descripcion": "",
+        "precio": "18.00",
+        "fotografia": "productos/de_valle_2L.webp",
+        "categoria": 12,
+        "disponible": true,
+        "controla_stock": true
+    }
+},
+{
+    "model": "api.producto",
+    "pk": 46,
+    "fields": {
+        "nombre": "Cerveza Paceña Macanuda",
+        "descripcion": "",
+        "precio": "18.00",
+        "fotografia": "productos/paceña.jpg",
+        "categoria": 12,
+        "disponible": true,
+        "controla_stock": true
+    }
+},
+{
+    "model": "api.producto",
+    "pk": 47,
+    "fields": {
+        "nombre": "Simba 2L",
+        "descripcion": "",
+        "precio": "16.00",
+        "fotografia": "productos/simba_2L.webp",
+        "categoria": 12,
+        "disponible": true,
+        "controla_stock": true
+    }
+},
+{
+    "model": "api.producto",
+    "pk": 48,
+    "fields": {
+        "nombre": "Pepsi 3L",
+        "descripcion": "",
+        "precio": "18.00",
+        "fotografia": "productos/pepsi_3L.webp",
+        "categoria": 12,
+        "disponible": true,
+        "controla_stock": true
+    }
+},
+{
+    "model": "api.producto",
+    "pk": 49,
+    "fields": {
+        "nombre": "Pepsi 1L",
+        "descripcion": "",
+        "precio": "7.00",
+        "fotografia": "productos/pepsi_de_1L.webp",
+        "categoria": 12,
+        "disponible": true,
+        "controla_stock": true
+    }
+},
+{
+    "model": "api.mesa",
+    "pk": 1,
+    "fields": {
+        "numero": 1,
+        "capacidad": 2,
+        "estado": "Libre"
+    }
+},
+{
+    "model": "api.mesa",
+    "pk": 2,
+    "fields": {
+        "numero": 2,
+        "capacidad": 4,
+        "estado": "Libre"
+    }
+},
+{
+    "model": "api.mesa",
+    "pk": 3,
+    "fields": {
+        "numero": 3,
+        "capacidad": 4,
+        "estado": "Libre"
+    }
+},
+{
+    "model": "api.mesa",
+    "pk": 4,
+    "fields": {
+        "numero": 4,
+        "capacidad": 6,
+        "estado": "Libre"
+    }
+},
+{
+    "model": "api.mesa",
+    "pk": 5,
+    "fields": {
+        "numero": 15,
+        "capacidad": 8,
+        "estado": "Libre"
+    }
+},
+{
+    "model": "api.pedido",
+    "pk": 1,
+    "fields": {
+        "tipo_pedido": "Consumo local",
+        "estado": "Pagado",
+        "mesa": 1,
+        "total": "35.00",
+        "observaciones": "",
+        "fecha_creacion": "2026-06-04T02:29:36.012Z"
+    }
+},
+{
+    "model": "api.pedido",
+    "pk": 2,
+    "fields": {
+        "tipo_pedido": "Consumo local",
+        "estado": "Pagado",
+        "mesa": 2,
+        "total": "25.00",
+        "observaciones": "",
+        "fecha_creacion": "2026-06-04T02:30:34.216Z"
+    }
+},
+{
+    "model": "api.pedido",
+    "pk": 3,
+    "fields": {
+        "tipo_pedido": "Consumo local",
+        "estado": "Pagado",
+        "mesa": 3,
+        "total": "80.00",
+        "observaciones": "",
+        "fecha_creacion": "2026-06-04T02:36:30.961Z"
+    }
+},
+{
+    "model": "api.pedido",
+    "pk": 4,
+    "fields": {
+        "tipo_pedido": "Consumo local",
+        "estado": "Pagado",
+        "mesa": 4,
+        "total": "25.00",
+        "observaciones": "efrfr",
+        "fecha_creacion": "2026-06-04T02:53:28.510Z"
+    }
+},
+{
+    "model": "api.pedido",
+    "pk": 5,
+    "fields": {
+        "tipo_pedido": "Delivery",
+        "estado": "Pendiente de pago",
+        "mesa": null,
+        "total": "35.00",
+        "observaciones": "Pollo a la Broaster Especial: Sin mayonesa",
+        "fecha_creacion": "2026-06-04T03:35:09.371Z"
+    }
+},
+{
+    "model": "api.pedido",
+    "pk": 6,
+    "fields": {
+        "tipo_pedido": "Delivery",
+        "estado": "Pendiente de pago",
+        "mesa": null,
+        "total": "35.00",
+        "observaciones": "",
+        "fecha_creacion": "2026-06-04T03:37:47.313Z"
+    }
+},
+{
+    "model": "api.pedido",
+    "pk": 7,
+    "fields": {
+        "tipo_pedido": "Delivery",
+        "estado": "Pendiente de pago",
+        "mesa": null,
+        "total": "35.00",
+        "observaciones": "",
+        "fecha_creacion": "2026-06-04T14:39:57.500Z"
+    }
+},
+{
+    "model": "api.pedido",
+    "pk": 8,
+    "fields": {
+        "tipo_pedido": "Consumo local",
+        "estado": "Pagado",
+        "mesa": 2,
+        "total": "50.00",
+        "observaciones": "reeruiui",
+        "fecha_creacion": "2026-06-09T15:08:57.422Z"
+    }
+},
+{
+    "model": "api.pedido",
+    "pk": 9,
+    "fields": {
+        "tipo_pedido": "Consumo local",
+        "estado": "Pagado",
+        "mesa": 1,
+        "total": "15.00",
+        "observaciones": "rhfg",
+        "fecha_creacion": "2026-06-11T01:52:02.644Z"
+    }
+},
+{
+    "model": "api.pedido",
+    "pk": 10,
+    "fields": {
+        "tipo_pedido": "Consumo local",
+        "estado": "Pagado",
+        "mesa": 5,
+        "total": "95.00",
+        "observaciones": "ss",
+        "fecha_creacion": "2026-06-11T01:53:01.108Z"
+    }
+},
+{
+    "model": "api.pedido",
+    "pk": 13,
+    "fields": {
+        "tipo_pedido": "Consumo local",
+        "estado": "Pagado",
+        "mesa": 3,
+        "total": "183.00",
+        "observaciones": "",
+        "fecha_creacion": "2026-06-11T02:01:44.410Z"
+    }
+},
+{
+    "model": "api.pedido",
+    "pk": 14,
+    "fields": {
+        "tipo_pedido": "Consumo local",
+        "estado": "Pagado",
+        "mesa": 4,
+        "total": "85.00",
+        "observaciones": "",
+        "fecha_creacion": "2026-06-11T02:41:59.819Z"
+    }
+},
+{
+    "model": "api.pedido",
+    "pk": 15,
+    "fields": {
+        "tipo_pedido": "Consumo local",
+        "estado": "Pagado",
+        "mesa": 2,
+        "total": "53.00",
+        "observaciones": "",
+        "fecha_creacion": "2026-06-11T03:26:06.649Z"
+    }
+},
+{
+    "model": "api.pedido",
+    "pk": 16,
+    "fields": {
+        "tipo_pedido": "Consumo local",
+        "estado": "Pagado",
+        "mesa": 2,
+        "total": "110.00",
+        "observaciones": "",
+        "fecha_creacion": "2026-06-11T03:33:40.581Z"
+    }
+},
+{
+    "model": "api.pedido",
+    "pk": 17,
+    "fields": {
+        "tipo_pedido": "Consumo local",
+        "estado": "Pagado",
+        "mesa": 4,
+        "total": "196.00",
+        "observaciones": "",
+        "fecha_creacion": "2026-06-11T03:59:54.206Z"
+    }
+},
+{
+    "model": "api.pedido",
+    "pk": 18,
+    "fields": {
+        "tipo_pedido": "Consumo local",
+        "estado": "Pagado",
+        "mesa": 3,
+        "total": "152.00",
+        "observaciones": "",
+        "fecha_creacion": "2026-06-11T04:00:53.736Z"
+    }
+},
+{
+    "model": "api.pedido",
+    "pk": 19,
+    "fields": {
+        "tipo_pedido": "Consumo local",
+        "estado": "Pagado",
+        "mesa": 1,
+        "total": "51.00",
+        "observaciones": "",
+        "fecha_creacion": "2026-06-11T04:02:15.296Z"
+    }
+},
+{
+    "model": "api.pedido",
+    "pk": 20,
+    "fields": {
+        "tipo_pedido": "Delivery",
+        "estado": "Pendiente de pago",
+        "mesa": null,
+        "total": "42.00",
+        "observaciones": "",
+        "fecha_creacion": "2026-06-11T04:04:26.765Z"
+    }
+},
+{
+    "model": "api.pedido",
+    "pk": 21,
+    "fields": {
+        "tipo_pedido": "Consumo local",
+        "estado": "Pagado",
+        "mesa": 5,
+        "total": "33.00",
+        "observaciones": "",
+        "fecha_creacion": "2026-06-11T18:51:56.165Z"
+    }
+},
+{
+    "model": "api.pedido",
+    "pk": 22,
+    "fields": {
+        "tipo_pedido": "Consumo local",
+        "estado": "Pagado",
+        "mesa": 4,
+        "total": "128.00",
+        "observaciones": "",
+        "fecha_creacion": "2026-06-11T20:48:03.432Z"
+    }
+},
+{
+    "model": "api.pedido",
+    "pk": 23,
+    "fields": {
+        "tipo_pedido": "Consumo local",
+        "estado": "Pagado",
+        "mesa": 2,
+        "total": "35.00",
+        "observaciones": "",
+        "fecha_creacion": "2026-06-16T14:16:40.433Z"
+    }
+},
+{
+    "model": "api.pedido",
+    "pk": 24,
+    "fields": {
+        "tipo_pedido": "Consumo local",
+        "estado": "Pagado",
+        "mesa": 1,
+        "total": "95.00",
+        "observaciones": "",
+        "fecha_creacion": "2026-06-18T14:57:04.582Z"
+    }
+},
+{
+    "model": "api.pedido",
+    "pk": 25,
+    "fields": {
+        "tipo_pedido": "Consumo local",
+        "estado": "Pagado",
+        "mesa": 3,
+        "total": "175.00",
+        "observaciones": "",
+        "fecha_creacion": "2026-06-18T15:00:22.196Z"
+    }
+},
+{
+    "model": "api.pedido",
+    "pk": 26,
+    "fields": {
+        "tipo_pedido": "Delivery",
+        "estado": "Pendiente de pago",
+        "mesa": null,
+        "total": "255.00",
+        "observaciones": "",
+        "fecha_creacion": "2026-06-18T15:13:43.696Z"
+    }
+},
+{
+    "model": "api.pedido",
+    "pk": 27,
+    "fields": {
+        "tipo_pedido": "Delivery",
+        "estado": "Pendiente de pago",
+        "mesa": null,
+        "total": "23.00",
+        "observaciones": "",
+        "fecha_creacion": "2026-06-23T00:57:25.698Z"
+    }
+},
+{
+    "model": "api.pedido",
+    "pk": 28,
+    "fields": {
+        "tipo_pedido": "Consumo local",
+        "estado": "Pagado",
+        "mesa": 1,
+        "total": "157.00",
+        "observaciones": "",
+        "fecha_creacion": "2026-06-24T16:34:18.770Z"
+    }
+},
+{
+    "model": "api.pedido",
+    "pk": 29,
+    "fields": {
+        "tipo_pedido": "Consumo local",
+        "estado": "Pagado",
+        "mesa": 2,
+        "total": "143.00",
+        "observaciones": "",
+        "fecha_creacion": "2026-06-24T16:44:37.579Z"
+    }
+},
+{
+    "model": "api.pedido",
+    "pk": 30,
+    "fields": {
+        "tipo_pedido": "Para llevar",
+        "estado": "Pagado",
+        "mesa": null,
+        "total": "140.00",
+        "observaciones": "",
+        "fecha_creacion": "2026-06-24T16:56:44.415Z"
+    }
+},
+{
+    "model": "api.pedido",
+    "pk": 31,
+    "fields": {
+        "tipo_pedido": "Consumo local",
+        "estado": "Pagado",
+        "mesa": 4,
+        "total": "55.00",
+        "observaciones": "",
+        "fecha_creacion": "2026-06-24T17:01:16.606Z"
+    }
+},
+{
+    "model": "api.pedido",
+    "pk": 32,
+    "fields": {
+        "tipo_pedido": "Delivery",
+        "estado": "Pendiente de pago",
+        "mesa": null,
+        "total": "37.00",
+        "observaciones": "",
+        "fecha_creacion": "2026-06-24T20:15:01.045Z"
+    }
+},
+{
+    "model": "api.pedido",
+    "pk": 33,
+    "fields": {
+        "tipo_pedido": "Delivery",
+        "estado": "Pendiente de pago",
+        "mesa": null,
+        "total": "68.00",
+        "observaciones": "",
+        "fecha_creacion": "2026-06-24T20:17:57.902Z"
+    }
+},
+{
+    "model": "api.pedido",
+    "pk": 34,
+    "fields": {
+        "tipo_pedido": "Delivery",
+        "estado": "Pendiente de pago",
+        "mesa": null,
+        "total": "30.00",
+        "observaciones": "",
+        "fecha_creacion": "2026-06-24T20:22:23.745Z"
+    }
+},
+{
+    "model": "api.pedido",
+    "pk": 35,
+    "fields": {
+        "tipo_pedido": "Consumo local",
+        "estado": "Pagado",
+        "mesa": 5,
+        "total": "101.00",
+        "observaciones": "",
+        "fecha_creacion": "2026-06-24T21:59:59.001Z"
+    }
+},
+{
+    "model": "api.pedido",
+    "pk": 36,
+    "fields": {
+        "tipo_pedido": "Consumo local",
+        "estado": "Pagado",
+        "mesa": 3,
+        "total": "54.00",
+        "observaciones": "",
+        "fecha_creacion": "2026-06-25T02:38:38.423Z"
+    }
+},
+{
+    "model": "api.pedido",
+    "pk": 37,
+    "fields": {
+        "tipo_pedido": "Consumo local",
+        "estado": "Pagado",
+        "mesa": 3,
+        "total": "84.00",
+        "observaciones": "",
+        "fecha_creacion": "2026-06-25T02:40:43.753Z"
+    }
+},
+{
+    "model": "api.pedido",
+    "pk": 38,
+    "fields": {
+        "tipo_pedido": "Delivery",
+        "estado": "Pagado",
+        "mesa": null,
+        "total": "4.00",
+        "observaciones": "",
+        "fecha_creacion": "2026-06-25T02:51:40.882Z"
+    }
+},
+{
+    "model": "api.pedido",
+    "pk": 39,
+    "fields": {
+        "tipo_pedido": "Delivery",
+        "estado": "Pendiente de pago",
+        "mesa": null,
+        "total": "23.00",
+        "observaciones": "",
+        "fecha_creacion": "2026-06-25T02:53:12.564Z"
+    }
+},
+{
+    "model": "api.pedido",
+    "pk": 40,
+    "fields": {
+        "tipo_pedido": "Delivery",
+        "estado": "Pendiente de pago",
+        "mesa": null,
+        "total": "16.00",
+        "observaciones": "",
+        "fecha_creacion": "2026-06-25T02:53:43.173Z"
+    }
+},
+{
+    "model": "api.pedido",
+    "pk": 41,
+    "fields": {
+        "tipo_pedido": "Delivery",
+        "estado": "Pendiente de pago",
+        "mesa": null,
+        "total": "16.00",
+        "observaciones": "",
+        "fecha_creacion": "2026-06-25T03:20:27.199Z"
+    }
+},
+{
+    "model": "api.pedido",
+    "pk": 42,
+    "fields": {
+        "tipo_pedido": "Delivery",
+        "estado": "Pendiente de pago",
+        "mesa": null,
+        "total": "16.00",
+        "observaciones": "",
+        "fecha_creacion": "2026-06-25T03:33:24.416Z"
+    }
+},
+{
+    "model": "api.pedido",
+    "pk": 43,
+    "fields": {
+        "tipo_pedido": "Delivery",
+        "estado": "Pendiente de pago",
+        "mesa": null,
+        "total": "11.00",
+        "observaciones": "",
+        "fecha_creacion": "2026-06-25T07:35:35.556Z"
+    }
+},
+{
+    "model": "api.pedido",
+    "pk": 44,
+    "fields": {
+        "tipo_pedido": "Delivery",
+        "estado": "Pagado",
+        "mesa": null,
+        "total": "15.00",
+        "observaciones": "",
+        "fecha_creacion": "2026-06-25T07:41:12.123Z"
+    }
+},
+{
+    "model": "api.pedido",
+    "pk": 45,
+    "fields": {
+        "tipo_pedido": "Delivery",
+        "estado": "Pendiente de pago",
+        "mesa": null,
+        "total": "4.00",
+        "observaciones": "",
+        "fecha_creacion": "2026-06-25T19:54:17.595Z"
+    }
+},
+{
+    "model": "api.detallepedido",
+    "pk": 1,
+    "fields": {
+        "pedido": 1,
+        "producto": 15,
+        "cantidad": 1,
+        "subtotal": "35.00"
+    }
+},
+{
+    "model": "api.detallepedido",
+    "pk": 2,
+    "fields": {
+        "pedido": 2,
+        "producto": 18,
+        "cantidad": 1,
+        "subtotal": "25.00"
+    }
+},
+{
+    "model": "api.detallepedido",
+    "pk": 3,
+    "fields": {
+        "pedido": 3,
+        "producto": 16,
+        "cantidad": 1,
+        "subtotal": "80.00"
+    }
+},
+{
+    "model": "api.detallepedido",
+    "pk": 4,
+    "fields": {
+        "pedido": 4,
+        "producto": 18,
+        "cantidad": 1,
+        "subtotal": "25.00"
+    }
+},
+{
+    "model": "api.detallepedido",
+    "pk": 5,
+    "fields": {
+        "pedido": 5,
+        "producto": 15,
+        "cantidad": 1,
+        "subtotal": "35.00"
+    }
+},
+{
+    "model": "api.detallepedido",
+    "pk": 6,
+    "fields": {
+        "pedido": 6,
+        "producto": 15,
+        "cantidad": 1,
+        "subtotal": "35.00"
+    }
+},
+{
+    "model": "api.detallepedido",
+    "pk": 7,
+    "fields": {
+        "pedido": 7,
+        "producto": 15,
+        "cantidad": 1,
+        "subtotal": "35.00"
+    }
+},
+{
+    "model": "api.detallepedido",
+    "pk": 8,
+    "fields": {
+        "pedido": 8,
+        "producto": 18,
+        "cantidad": 2,
+        "subtotal": "50.00"
+    }
+},
+{
+    "model": "api.detallepedido",
+    "pk": 9,
+    "fields": {
+        "pedido": 9,
+        "producto": 22,
+        "cantidad": 1,
+        "subtotal": "15.00"
+    }
+},
+{
+    "model": "api.detallepedido",
+    "pk": 10,
+    "fields": {
+        "pedido": 10,
+        "producto": 21,
+        "cantidad": 1,
+        "subtotal": "95.00"
+    }
+},
+{
+    "model": "api.detallepedido",
+    "pk": 16,
+    "fields": {
+        "pedido": 13,
+        "producto": 20,
+        "cantidad": 1,
+        "subtotal": "48.00"
+    }
+},
+{
+    "model": "api.detallepedido",
+    "pk": 17,
+    "fields": {
+        "pedido": 13,
+        "producto": 21,
+        "cantidad": 1,
+        "subtotal": "95.00"
+    }
+},
+{
+    "model": "api.detallepedido",
+    "pk": 18,
+    "fields": {
+        "pedido": 13,
+        "producto": 18,
+        "cantidad": 1,
+        "subtotal": "25.00"
+    }
+},
+{
+    "model": "api.detallepedido",
+    "pk": 19,
+    "fields": {
+        "pedido": 13,
+        "producto": 22,
+        "cantidad": 1,
+        "subtotal": "15.00"
+    }
+},
+{
+    "model": "api.detallepedido",
+    "pk": 20,
+    "fields": {
+        "pedido": 14,
+        "producto": 15,
+        "cantidad": 1,
+        "subtotal": "35.00"
+    }
+},
+{
+    "model": "api.detallepedido",
+    "pk": 21,
+    "fields": {
+        "pedido": 14,
+        "producto": 18,
+        "cantidad": 2,
+        "subtotal": "50.00"
+    }
+},
+{
+    "model": "api.detallepedido",
+    "pk": 22,
+    "fields": {
+        "pedido": 15,
+        "producto": 15,
+        "cantidad": 1,
+        "subtotal": "35.00"
+    }
+},
+{
+    "model": "api.detallepedido",
+    "pk": 23,
+    "fields": {
+        "pedido": 15,
+        "producto": 23,
+        "cantidad": 1,
+        "subtotal": "18.00"
+    }
+},
+{
+    "model": "api.detallepedido",
+    "pk": 24,
+    "fields": {
+        "pedido": 16,
+        "producto": 22,
+        "cantidad": 1,
+        "subtotal": "15.00"
+    }
+},
+{
+    "model": "api.detallepedido",
+    "pk": 25,
+    "fields": {
+        "pedido": 16,
+        "producto": 21,
+        "cantidad": 1,
+        "subtotal": "95.00"
+    }
+},
+{
+    "model": "api.detallepedido",
+    "pk": 26,
+    "fields": {
+        "pedido": 17,
+        "producto": 15,
+        "cantidad": 1,
+        "subtotal": "35.00"
+    }
+},
+{
+    "model": "api.detallepedido",
+    "pk": 27,
+    "fields": {
+        "pedido": 17,
+        "producto": 21,
+        "cantidad": 1,
+        "subtotal": "95.00"
+    }
+},
+{
+    "model": "api.detallepedido",
+    "pk": 28,
+    "fields": {
+        "pedido": 17,
+        "producto": 20,
+        "cantidad": 1,
+        "subtotal": "48.00"
+    }
+},
+{
+    "model": "api.detallepedido",
+    "pk": 29,
+    "fields": {
+        "pedido": 17,
+        "producto": 23,
+        "cantidad": 1,
+        "subtotal": "18.00"
+    }
+},
+{
+    "model": "api.detallepedido",
+    "pk": 30,
+    "fields": {
+        "pedido": 18,
+        "producto": 17,
+        "cantidad": 1,
+        "subtotal": "42.00"
+    }
+},
+{
+    "model": "api.detallepedido",
+    "pk": 31,
+    "fields": {
+        "pedido": 18,
+        "producto": 21,
+        "cantidad": 1,
+        "subtotal": "95.00"
+    }
+},
+{
+    "model": "api.detallepedido",
+    "pk": 32,
+    "fields": {
+        "pedido": 18,
+        "producto": 22,
+        "cantidad": 1,
+        "subtotal": "15.00"
+    }
+},
+{
+    "model": "api.detallepedido",
+    "pk": 33,
+    "fields": {
+        "pedido": 19,
+        "producto": 17,
+        "cantidad": 1,
+        "subtotal": "51.00"
+    }
+},
+{
+    "model": "api.detallepedido",
+    "pk": 34,
+    "fields": {
+        "pedido": 20,
+        "producto": 17,
+        "cantidad": 1,
+        "subtotal": "42.00"
+    }
+},
+{
+    "model": "api.detallepedido",
+    "pk": 35,
+    "fields": {
+        "pedido": 21,
+        "producto": 22,
+        "cantidad": 1,
+        "subtotal": "15.00"
+    }
+},
+{
+    "model": "api.detallepedido",
+    "pk": 36,
+    "fields": {
+        "pedido": 21,
+        "producto": 23,
+        "cantidad": 1,
+        "subtotal": "18.00"
+    }
+},
+{
+    "model": "api.detallepedido",
+    "pk": 37,
+    "fields": {
+        "pedido": 22,
+        "producto": 16,
+        "cantidad": 1,
+        "subtotal": "80.00"
+    }
+},
+{
+    "model": "api.detallepedido",
+    "pk": 38,
+    "fields": {
+        "pedido": 22,
+        "producto": 20,
+        "cantidad": 1,
+        "subtotal": "48.00"
+    }
+},
+{
+    "model": "api.detallepedido",
+    "pk": 39,
+    "fields": {
+        "pedido": 23,
+        "producto": 15,
+        "cantidad": 1,
+        "subtotal": "35.00"
+    }
+},
+{
+    "model": "api.detallepedido",
+    "pk": 40,
+    "fields": {
+        "pedido": 24,
+        "producto": 21,
+        "cantidad": 1,
+        "subtotal": "95.00"
+    }
+},
+{
+    "model": "api.detallepedido",
+    "pk": 41,
+    "fields": {
+        "pedido": 25,
+        "producto": 16,
+        "cantidad": 1,
+        "subtotal": "80.00"
+    }
+},
+{
+    "model": "api.detallepedido",
+    "pk": 42,
+    "fields": {
+        "pedido": 25,
+        "producto": 21,
+        "cantidad": 1,
+        "subtotal": "95.00"
+    }
+},
+{
+    "model": "api.detallepedido",
+    "pk": 43,
+    "fields": {
+        "pedido": 26,
+        "producto": 16,
+        "cantidad": 2,
+        "subtotal": "160.00"
+    }
+},
+{
+    "model": "api.detallepedido",
+    "pk": 44,
+    "fields": {
+        "pedido": 26,
+        "producto": 21,
+        "cantidad": 1,
+        "subtotal": "95.00"
+    }
+},
+{
+    "model": "api.detallepedido",
+    "pk": 45,
+    "fields": {
+        "pedido": 27,
+        "producto": 16,
+        "cantidad": 1,
+        "subtotal": "23.00"
+    }
+},
+{
+    "model": "api.detallepedido",
+    "pk": 46,
+    "fields": {
+        "pedido": 28,
+        "producto": 27,
+        "cantidad": 1,
+        "subtotal": "15.00"
+    }
+},
+{
+    "model": "api.detallepedido",
+    "pk": 47,
+    "fields": {
+        "pedido": 28,
+        "producto": 16,
+        "cantidad": 1,
+        "subtotal": "80.00"
+    }
+},
+{
+    "model": "api.detallepedido",
+    "pk": 48,
+    "fields": {
+        "pedido": 28,
+        "producto": 36,
+        "cantidad": 1,
+        "subtotal": "16.00"
+    }
+},
+{
+    "model": "api.detallepedido",
+    "pk": 49,
+    "fields": {
+        "pedido": 28,
+        "producto": 26,
+        "cantidad": 2,
+        "subtotal": "46.00"
+    }
+},
+{
+    "model": "api.detallepedido",
+    "pk": 50,
+    "fields": {
+        "pedido": 29,
+        "producto": 25,
+        "cantidad": 2,
+        "subtotal": "60.00"
+    }
+},
+{
+    "model": "api.detallepedido",
+    "pk": 51,
+    "fields": {
+        "pedido": 29,
+        "producto": 27,
+        "cantidad": 1,
+        "subtotal": "15.00"
+    }
+},
+{
+    "model": "api.detallepedido",
+    "pk": 52,
+    "fields": {
+        "pedido": 29,
+        "producto": 30,
+        "cantidad": 1,
+        "subtotal": "30.00"
+    }
+},
+{
+    "model": "api.detallepedido",
+    "pk": 53,
+    "fields": {
+        "pedido": 29,
+        "producto": 26,
+        "cantidad": 1,
+        "subtotal": "23.00"
+    }
+},
+{
+    "model": "api.detallepedido",
+    "pk": 54,
+    "fields": {
+        "pedido": 29,
+        "producto": 29,
+        "cantidad": 1,
+        "subtotal": "15.00"
+    }
+},
+{
+    "model": "api.detallepedido",
+    "pk": 55,
+    "fields": {
+        "pedido": 30,
+        "producto": 18,
+        "cantidad": 2,
+        "subtotal": "50.00"
+    }
+},
+{
+    "model": "api.detallepedido",
+    "pk": 56,
+    "fields": {
+        "pedido": 30,
+        "producto": 30,
+        "cantidad": 2,
+        "subtotal": "60.00"
+    }
+},
+{
+    "model": "api.detallepedido",
+    "pk": 57,
+    "fields": {
+        "pedido": 30,
+        "producto": 29,
+        "cantidad": 2,
+        "subtotal": "30.00"
+    }
+},
+{
+    "model": "api.detallepedido",
+    "pk": 58,
+    "fields": {
+        "pedido": 31,
+        "producto": 30,
+        "cantidad": 1,
+        "subtotal": "30.00"
+    }
+},
+{
+    "model": "api.detallepedido",
+    "pk": 59,
+    "fields": {
+        "pedido": 31,
+        "producto": 18,
+        "cantidad": 1,
+        "subtotal": "25.00"
+    }
+},
+{
+    "model": "api.detallepedido",
+    "pk": 60,
+    "fields": {
+        "pedido": 32,
+        "producto": 32,
+        "cantidad": 1,
+        "subtotal": "7.00"
+    }
+},
+{
+    "model": "api.detallepedido",
+    "pk": 61,
+    "fields": {
+        "pedido": 32,
+        "producto": 25,
+        "cantidad": 1,
+        "subtotal": "30.00"
+    }
+},
+{
+    "model": "api.detallepedido",
+    "pk": 62,
+    "fields": {
+        "pedido": 33,
+        "producto": 25,
+        "cantidad": 1,
+        "subtotal": "30.00"
+    }
+},
+{
+    "model": "api.detallepedido",
+    "pk": 63,
+    "fields": {
+        "pedido": 33,
+        "producto": 26,
+        "cantidad": 1,
+        "subtotal": "23.00"
+    }
+},
+{
+    "model": "api.detallepedido",
+    "pk": 64,
+    "fields": {
+        "pedido": 33,
+        "producto": 27,
+        "cantidad": 1,
+        "subtotal": "15.00"
+    }
+},
+{
+    "model": "api.detallepedido",
+    "pk": 65,
+    "fields": {
+        "pedido": 34,
+        "producto": 25,
+        "cantidad": 1,
+        "subtotal": "30.00"
+    }
+},
+{
+    "model": "api.detallepedido",
+    "pk": 66,
+    "fields": {
+        "pedido": 35,
+        "producto": 25,
+        "cantidad": 2,
+        "subtotal": "78.00"
+    }
+},
+{
+    "model": "api.detallepedido",
+    "pk": 67,
+    "fields": {
+        "pedido": 35,
+        "producto": 26,
+        "cantidad": 1,
+        "subtotal": "23.00"
+    }
+},
+{
+    "model": "api.detallepedido",
+    "pk": 68,
+    "fields": {
+        "pedido": 36,
+        "producto": 27,
+        "cantidad": 1,
+        "subtotal": "24.00"
+    }
+},
+{
+    "model": "api.detallepedido",
+    "pk": 69,
+    "fields": {
+        "pedido": 36,
+        "producto": 29,
+        "cantidad": 2,
+        "subtotal": "30.00"
+    }
+},
+{
+    "model": "api.detallepedido",
+    "pk": 70,
+    "fields": {
+        "pedido": 37,
+        "producto": 17,
+        "cantidad": 2,
+        "subtotal": "84.00"
+    }
+},
+{
+    "model": "api.detallepedido",
+    "pk": 71,
+    "fields": {
+        "pedido": 38,
+        "producto": 41,
+        "cantidad": 1,
+        "subtotal": "4.00"
+    }
+},
+{
+    "model": "api.detallepedido",
+    "pk": 72,
+    "fields": {
+        "pedido": 39,
+        "producto": 31,
+        "cantidad": 1,
+        "subtotal": "16.00"
+    }
+},
+{
+    "model": "api.detallepedido",
+    "pk": 73,
+    "fields": {
+        "pedido": 39,
+        "producto": 32,
+        "cantidad": 1,
+        "subtotal": "7.00"
+    }
+},
+{
+    "model": "api.detallepedido",
+    "pk": 74,
+    "fields": {
+        "pedido": 40,
+        "producto": 31,
+        "cantidad": 1,
+        "subtotal": "16.00"
+    }
+},
+{
+    "model": "api.detallepedido",
+    "pk": 75,
+    "fields": {
+        "pedido": 41,
+        "producto": 31,
+        "cantidad": 1,
+        "subtotal": "16.00"
+    }
+},
+{
+    "model": "api.detallepedido",
+    "pk": 76,
+    "fields": {
+        "pedido": 42,
+        "producto": 31,
+        "cantidad": 1,
+        "subtotal": "16.00"
+    }
+},
+{
+    "model": "api.detallepedido",
+    "pk": 77,
+    "fields": {
+        "pedido": 43,
+        "producto": 32,
+        "cantidad": 1,
+        "subtotal": "7.00"
+    }
+},
+{
+    "model": "api.detallepedido",
+    "pk": 78,
+    "fields": {
+        "pedido": 43,
+        "producto": 33,
+        "cantidad": 1,
+        "subtotal": "4.00"
+    }
+},
+{
+    "model": "api.detallepedido",
+    "pk": 79,
+    "fields": {
+        "pedido": 44,
+        "producto": 27,
+        "cantidad": 1,
+        "subtotal": "15.00"
+    }
+},
+{
+    "model": "api.detallepedido",
+    "pk": 80,
+    "fields": {
+        "pedido": 45,
+        "producto": 33,
+        "cantidad": 1,
+        "subtotal": "4.00"
+    }
+},
+{
+    "model": "api.pago",
+    "pk": 1,
+    "fields": {
+        "pedido": 1,
+        "metodo": "Efectivo",
+        "monto_efectivo": "35.00",
+        "monto_qr": "0.00",
+        "fecha_pago": "2026-06-04T02:29:36.232Z"
+    }
+},
+{
+    "model": "api.pago",
+    "pk": 2,
+    "fields": {
+        "pedido": 2,
+        "metodo": "Efectivo",
+        "monto_efectivo": "25.00",
+        "monto_qr": "0.00",
+        "fecha_pago": "2026-06-04T02:30:34.330Z"
+    }
+},
+{
+    "model": "api.pago",
+    "pk": 3,
+    "fields": {
+        "pedido": 3,
+        "metodo": "Efectivo",
+        "monto_efectivo": "80.00",
+        "monto_qr": "0.00",
+        "fecha_pago": "2026-06-04T02:36:31.083Z"
+    }
+},
+{
+    "model": "api.pago",
+    "pk": 4,
+    "fields": {
+        "pedido": 4,
+        "metodo": "Mixto",
+        "monto_efectivo": "10.00",
+        "monto_qr": "15.00",
+        "fecha_pago": "2026-06-04T02:53:28.634Z"
+    }
+},
+{
+    "model": "api.pago",
+    "pk": 5,
+    "fields": {
+        "pedido": 8,
+        "metodo": "Mixto",
+        "monto_efectivo": "25.00",
+        "monto_qr": "25.00",
+        "fecha_pago": "2026-06-09T15:08:57.721Z"
+    }
+},
+{
+    "model": "api.pago",
+    "pk": 6,
+    "fields": {
+        "pedido": 9,
+        "metodo": "Efectivo",
+        "monto_efectivo": "15.00",
+        "monto_qr": "0.00",
+        "fecha_pago": "2026-06-11T01:52:02.802Z"
+    }
+},
+{
+    "model": "api.pago",
+    "pk": 7,
+    "fields": {
+        "pedido": 10,
+        "metodo": "Efectivo",
+        "monto_efectivo": "95.00",
+        "monto_qr": "0.00",
+        "fecha_pago": "2026-06-11T01:53:01.243Z"
+    }
+},
+{
+    "model": "api.pago",
+    "pk": 10,
+    "fields": {
+        "pedido": 13,
+        "metodo": "Efectivo",
+        "monto_efectivo": "183.00",
+        "monto_qr": "0.00",
+        "fecha_pago": "2026-06-11T02:01:44.655Z"
+    }
+},
+{
+    "model": "api.pago",
+    "pk": 11,
+    "fields": {
+        "pedido": 14,
+        "metodo": "Efectivo",
+        "monto_efectivo": "85.00",
+        "monto_qr": "0.00",
+        "fecha_pago": "2026-06-11T02:42:00.105Z"
+    }
+},
+{
+    "model": "api.pago",
+    "pk": 12,
+    "fields": {
+        "pedido": 15,
+        "metodo": "Efectivo",
+        "monto_efectivo": "53.00",
+        "monto_qr": "0.00",
+        "fecha_pago": "2026-06-11T03:26:06.854Z"
+    }
+},
+{
+    "model": "api.pago",
+    "pk": 13,
+    "fields": {
+        "pedido": 16,
+        "metodo": "Efectivo",
+        "monto_efectivo": "110.00",
+        "monto_qr": "0.00",
+        "fecha_pago": "2026-06-11T03:33:40.734Z"
+    }
+},
+{
+    "model": "api.pago",
+    "pk": 14,
+    "fields": {
+        "pedido": 17,
+        "metodo": "Mixto",
+        "monto_efectivo": "100.00",
+        "monto_qr": "96.00",
+        "fecha_pago": "2026-06-11T03:59:54.467Z"
+    }
+},
+{
+    "model": "api.pago",
+    "pk": 15,
+    "fields": {
+        "pedido": 18,
+        "metodo": "QR",
+        "monto_efectivo": "0.00",
+        "monto_qr": "152.00",
+        "fecha_pago": "2026-06-11T04:00:53.979Z"
+    }
+},
+{
+    "model": "api.pago",
+    "pk": 16,
+    "fields": {
+        "pedido": 19,
+        "metodo": "QR",
+        "monto_efectivo": "0.00",
+        "monto_qr": "51.00",
+        "fecha_pago": "2026-06-11T04:02:15.524Z"
+    }
+},
+{
+    "model": "api.pago",
+    "pk": 17,
+    "fields": {
+        "pedido": 21,
+        "metodo": "Efectivo",
+        "monto_efectivo": "33.00",
+        "monto_qr": "0.00",
+        "fecha_pago": "2026-06-11T18:51:56.520Z"
+    }
+},
+{
+    "model": "api.pago",
+    "pk": 18,
+    "fields": {
+        "pedido": 22,
+        "metodo": "Efectivo",
+        "monto_efectivo": "128.00",
+        "monto_qr": "0.00",
+        "fecha_pago": "2026-06-11T20:48:03.646Z"
+    }
+},
+{
+    "model": "api.pago",
+    "pk": 19,
+    "fields": {
+        "pedido": 23,
+        "metodo": "Efectivo",
+        "monto_efectivo": "35.00",
+        "monto_qr": "0.00",
+        "fecha_pago": "2026-06-16T14:16:40.654Z"
+    }
+},
+{
+    "model": "api.pago",
+    "pk": 20,
+    "fields": {
+        "pedido": 24,
+        "metodo": "Efectivo",
+        "monto_efectivo": "95.00",
+        "monto_qr": "0.00",
+        "fecha_pago": "2026-06-18T14:57:04.797Z"
+    }
+},
+{
+    "model": "api.pago",
+    "pk": 21,
+    "fields": {
+        "pedido": 25,
+        "metodo": "Efectivo",
+        "monto_efectivo": "175.00",
+        "monto_qr": "0.00",
+        "fecha_pago": "2026-06-18T15:00:22.385Z"
+    }
+},
+{
+    "model": "api.pago",
+    "pk": 22,
+    "fields": {
+        "pedido": 28,
+        "metodo": "QR",
+        "monto_efectivo": "0.00",
+        "monto_qr": "157.00",
+        "fecha_pago": "2026-06-24T16:34:19.357Z"
+    }
+},
+{
+    "model": "api.pago",
+    "pk": 23,
+    "fields": {
+        "pedido": 29,
+        "metodo": "Efectivo",
+        "monto_efectivo": "143.00",
+        "monto_qr": "0.00",
+        "fecha_pago": "2026-06-24T16:44:37.927Z"
+    }
+},
+{
+    "model": "api.pago",
+    "pk": 24,
+    "fields": {
+        "pedido": 30,
+        "metodo": "Efectivo",
+        "monto_efectivo": "140.00",
+        "monto_qr": "0.00",
+        "fecha_pago": "2026-06-24T16:56:44.776Z"
+    }
+},
+{
+    "model": "api.pago",
+    "pk": 25,
+    "fields": {
+        "pedido": 31,
+        "metodo": "Efectivo",
+        "monto_efectivo": "55.00",
+        "monto_qr": "0.00",
+        "fecha_pago": "2026-06-24T17:01:17.013Z"
+    }
+},
+{
+    "model": "api.pago",
+    "pk": 26,
+    "fields": {
+        "pedido": 35,
+        "metodo": "Mixto",
+        "monto_efectivo": "55.00",
+        "monto_qr": "46.00",
+        "fecha_pago": "2026-06-24T21:59:59.158Z"
+    }
+},
+{
+    "model": "api.pago",
+    "pk": 27,
+    "fields": {
+        "pedido": 36,
+        "metodo": "Efectivo",
+        "monto_efectivo": "54.00",
+        "monto_qr": "0.00",
+        "fecha_pago": "2026-06-25T02:38:38.777Z"
+    }
+},
+{
+    "model": "api.pago",
+    "pk": 28,
+    "fields": {
+        "pedido": 37,
+        "metodo": "Efectivo",
+        "monto_efectivo": "84.00",
+        "monto_qr": "0.00",
+        "fecha_pago": "2026-06-25T02:40:43.968Z"
+    }
+},
+{
+    "model": "api.pago",
+    "pk": 29,
+    "fields": {
+        "pedido": 38,
+        "metodo": "Efectivo",
+        "monto_efectivo": "4.00",
+        "monto_qr": "0.00",
+        "fecha_pago": "2026-06-25T02:51:41.175Z"
+    }
+},
+{
+    "model": "api.pago",
+    "pk": 30,
+    "fields": {
+        "pedido": 44,
+        "metodo": "Mixto",
+        "monto_efectivo": "5.00",
+        "monto_qr": "10.00",
+        "fecha_pago": "2026-06-25T07:41:12.382Z"
+    }
+},
+{
+    "model": "api.clientedelivery",
+    "pk": 1,
+    "fields": {
+        "nombre": "Juan Perez",
+        "telefono": "78945612",
+        "direccion": "Calle Falsa 123"
+    }
+},
+{
+    "model": "api.clientedelivery",
+    "pk": 2,
+    "fields": {
+        "nombre": "fsdfsf",
+        "telefono": "75757222",
+        "direccion": "ddvvv"
+    }
+},
+{
+    "model": "api.clientedelivery",
+    "pk": 3,
+    "fields": {
+        "nombre": "tr",
+        "telefono": "6546464",
+        "direccion": "rtht464646"
+    }
+},
+{
+    "model": "api.clientedelivery",
+    "pk": 4,
+    "fields": {
+        "nombre": "TTY3TR",
+        "telefono": "325",
+        "direccion": "WRTWRR"
+    }
+},
+{
+    "model": "api.clientedelivery",
+    "pk": 5,
+    "fields": {
+        "nombre": "gdgdfg",
+        "telefono": "4545484",
+        "direccion": "fhfyhfg"
+    }
+},
+{
+    "model": "api.clientedelivery",
+    "pk": 6,
+    "fields": {
+        "nombre": "Evelin Carrizales",
+        "telefono": "67798921",
+        "direccion": "Barrio Villa Esperanza calle los Cedros esquina arrayán"
+    }
+},
+{
+    "model": "api.clientedelivery",
+    "pk": 7,
+    "fields": {
+        "nombre": "yohan camaly grajeda",
+        "telefono": "64889594",
+        "direccion": "calle victor rueda"
+    }
+},
+{
+    "model": "api.clientedelivery",
+    "pk": 8,
+    "fields": {
+        "nombre": "Evekin carrizales",
+        "telefono": "67798921",
+        "direccion": "Barrio Villa Esperanza calle los cedros esquina arrayan"
+    }
+},
+{
+    "model": "api.clientedelivery",
+    "pk": 9,
+    "fields": {
+        "nombre": "jose carlos",
+        "telefono": "88154",
+        "direccion": "nose"
+    }
+},
+{
+    "model": "api.clientedelivery",
+    "pk": 10,
+    "fields": {
+        "nombre": "kassd",
+        "telefono": "872",
+        "direccion": "asdfmkaldf"
+    }
+},
+{
+    "model": "api.clientedelivery",
+    "pk": 11,
+    "fields": {
+        "nombre": "jose",
+        "telefono": "985",
+        "direccion": "aodsfnasd"
+    }
+},
+{
+    "model": "api.clientedelivery",
+    "pk": 12,
+    "fields": {
+        "nombre": "sfgds",
+        "telefono": "87das",
+        "direccion": "adsfadfs"
+    }
+},
+{
+    "model": "api.clientedelivery",
+    "pk": 13,
+    "fields": {
+        "nombre": "aasd",
+        "telefono": "adsa",
+        "direccion": "asda"
+    }
+},
+{
+    "model": "api.clientedelivery",
+    "pk": 14,
+    "fields": {
+        "nombre": "8",
+        "telefono": "8",
+        "direccion": "8"
+    }
+},
+{
+    "model": "api.clientedelivery",
+    "pk": 15,
+    "fields": {
+        "nombre": "fb",
+        "telefono": "252558",
+        "direccion": "bdxbfxbf"
+    }
+},
+{
+    "model": "api.pedidodelivery",
+    "pk": 1,
+    "fields": {
+        "pedido": 5,
+        "cliente": 1,
+        "estado": "Rechazado"
+    }
+},
+{
+    "model": "api.pedidodelivery",
+    "pk": 2,
+    "fields": {
+        "pedido": 6,
+        "cliente": 2,
+        "estado": "Rechazado"
+    }
+},
+{
+    "model": "api.pedidodelivery",
+    "pk": 3,
+    "fields": {
+        "pedido": 7,
+        "cliente": 3,
+        "estado": "Entregado"
+    }
+},
+{
+    "model": "api.pedidodelivery",
+    "pk": 4,
+    "fields": {
+        "pedido": 20,
+        "cliente": 4,
+        "estado": "Rechazado"
+    }
+},
+{
+    "model": "api.pedidodelivery",
+    "pk": 5,
+    "fields": {
+        "pedido": 26,
+        "cliente": 5,
+        "estado": "Rechazado"
+    }
+},
+{
+    "model": "api.pedidodelivery",
+    "pk": 6,
+    "fields": {
+        "pedido": 27,
+        "cliente": 6,
+        "estado": "Aceptado"
+    }
+},
+{
+    "model": "api.pedidodelivery",
+    "pk": 7,
+    "fields": {
+        "pedido": 32,
+        "cliente": 7,
+        "estado": "Aceptado"
+    }
+},
+{
+    "model": "api.pedidodelivery",
+    "pk": 8,
+    "fields": {
+        "pedido": 33,
+        "cliente": 8,
+        "estado": "Aceptado"
+    }
+},
+{
+    "model": "api.pedidodelivery",
+    "pk": 9,
+    "fields": {
+        "pedido": 34,
+        "cliente": 9,
+        "estado": "Aceptado"
+    }
+},
+{
+    "model": "api.pedidodelivery",
+    "pk": 10,
+    "fields": {
+        "pedido": 39,
+        "cliente": 10,
+        "estado": "Aceptado"
+    }
+},
+{
+    "model": "api.pedidodelivery",
+    "pk": 11,
+    "fields": {
+        "pedido": 40,
+        "cliente": 11,
+        "estado": "Aceptado"
+    }
+},
+{
+    "model": "api.pedidodelivery",
+    "pk": 12,
+    "fields": {
+        "pedido": 41,
+        "cliente": 12,
+        "estado": "Rechazado"
+    }
+},
+{
+    "model": "api.pedidodelivery",
+    "pk": 13,
+    "fields": {
+        "pedido": 42,
+        "cliente": 13,
+        "estado": "Aceptado"
+    }
+},
+{
+    "model": "api.pedidodelivery",
+    "pk": 14,
+    "fields": {
+        "pedido": 43,
+        "cliente": 14,
+        "estado": "Rechazado"
+    }
+},
+{
+    "model": "api.pedidodelivery",
+    "pk": 15,
+    "fields": {
+        "pedido": 45,
+        "cliente": 15,
+        "estado": "Rechazado"
+    }
+},
+{
+    "model": "api.inventario",
+    "pk": 1,
+    "fields": {
+        "producto": 24,
+        "cantidad_actual": 74,
+        "stock_minimo": 5
+    }
+},
+{
+    "model": "api.inventario",
+    "pk": 2,
+    "fields": {
+        "producto": 31,
+        "cantidad_actual": 15,
+        "stock_minimo": 5
+    }
+},
+{
+    "model": "api.inventario",
+    "pk": 3,
+    "fields": {
+        "producto": 32,
+        "cantidad_actual": 10,
+        "stock_minimo": 5
+    }
+},
+{
+    "model": "api.inventario",
+    "pk": 4,
+    "fields": {
+        "producto": 33,
+        "cantidad_actual": 10,
+        "stock_minimo": 5
+    }
+},
+{
+    "model": "api.inventario",
+    "pk": 5,
+    "fields": {
+        "producto": 34,
+        "cantidad_actual": 8,
+        "stock_minimo": 5
+    }
+},
+{
+    "model": "api.movimientoinventario",
+    "pk": 1,
+    "fields": {
+        "inventario": 1,
+        "tipo": "Entrada",
+        "cantidad": 24,
+        "fecha": "2026-06-04T04:00:41.462Z"
+    }
+},
+{
+    "model": "api.movimientoinventario",
+    "pk": 2,
+    "fields": {
+        "inventario": 1,
+        "tipo": "Entrada",
+        "cantidad": 50,
+        "fecha": "2026-06-04T04:18:12.488Z"
+    }
+},
+{
+    "model": "api.movimientoinventario",
+    "pk": 3,
+    "fields": {
+        "inventario": 2,
+        "tipo": "Entrada",
+        "cantidad": 5,
+        "fecha": "2026-06-22T22:42:26.999Z"
+    }
+},
+{
+    "model": "api.movimientoinventario",
+    "pk": 4,
+    "fields": {
+        "inventario": 2,
+        "tipo": "Entrada",
+        "cantidad": 10,
+        "fecha": "2026-06-23T01:31:44.938Z"
+    }
+},
+{
+    "model": "api.movimientoinventario",
+    "pk": 5,
+    "fields": {
+        "inventario": 3,
+        "tipo": "Entrada",
+        "cantidad": 10,
+        "fecha": "2026-06-23T01:31:54.963Z"
+    }
+},
+{
+    "model": "api.movimientoinventario",
+    "pk": 6,
+    "fields": {
+        "inventario": 4,
+        "tipo": "Entrada",
+        "cantidad": 10,
+        "fecha": "2026-06-23T01:32:04.832Z"
+    }
+},
+{
+    "model": "api.movimientoinventario",
+    "pk": 7,
+    "fields": {
+        "inventario": 5,
+        "tipo": "Entrada",
+        "cantidad": 8,
+        "fecha": "2026-06-23T01:32:14.740Z"
+    }
+},
+{
+    "model": "api.extra",
+    "pk": 7,
+    "fields": {
+        "nombre": "salsas -miel de mostaza - barbacoa - búfalo",
+        "precio": "5.00"
+    }
+},
+{
+    "model": "api.extra",
+    "pk": 8,
+    "fields": {
+        "nombre": "presa de pollo extra para pollo a la canasta",
+        "precio": "4.00"
+    }
+},
+{
+    "model": "api.configuracion",
+    "pk": 1,
+    "fields": {
+        "imagen_qr": "configuracion/descarga.jpg"
+    }
+},
+{
+    "model": "api.reportecierre",
+    "pk": 1,
+    "fields": {
+        "cajero": "jose",
+        "fecha_cierre": "2026-06-24T22:14:38.847Z",
+        "turno_descripcion": "Turno mañana - 24/06/2026",
+        "fondo_inicial": "266.00",
+        "total_efectivo": "55.00",
+        "total_qr": "46.00",
+        "total_ventas": "101.00",
+        "efectivo_esperado": "321.00",
+        "efectivo_contado": "101.00",
+        "diferencia": "-220.00",
+        "notas": "falta el pago por QR de 46bs",
+        "detalle_movimientos": [
+            {
+                "desc": "Venta POS - Pedido #35 (Consumo local - Mesa 15)",
+                "type": "Mixto",
+                "amount": 101,
+                "montoQr": 46,
+                "timestamp": "17:59:59",
+                "montoEfectivo": 55
+            }
+        ],
+        "detalle_efectivo": {
+            "b5": 0,
+            "m1": 1,
+            "m2": 0,
+            "b10": 1,
+            "b20": 2,
+            "b50": 1,
+            "b100": 0,
+            "b200": 0,
+            "m020": 0,
+            "m050": 0
+        },
+        "archivado": false
+    }
+},
+{
+    "model": "api.reportecierre",
+    "pk": 2,
+    "fields": {
+        "cajero": "lorena",
+        "fecha_cierre": "2026-06-25T02:35:16.681Z",
+        "turno_descripcion": "Turno tarde - 24/06/2026",
+        "fondo_inicial": "180.00",
+        "total_efectivo": "0.00",
+        "total_qr": "0.00",
+        "total_ventas": "0.00",
+        "efectivo_esperado": "180.00",
+        "efectivo_contado": "0.00",
+        "diferencia": "-180.00",
+        "notas": "m<mzx",
+        "detalle_movimientos": [],
+        "detalle_efectivo": {
+            "b5": 0,
+            "m1": 0,
+            "m2": 0,
+            "b10": 0,
+            "b20": 0,
+            "b50": 0,
+            "b100": 0,
+            "b200": 0,
+            "m020": 0,
+            "m050": 0
+        },
+        "archivado": false
+    }
+}
+]
