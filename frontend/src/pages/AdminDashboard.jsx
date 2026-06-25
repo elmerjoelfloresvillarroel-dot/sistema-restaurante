@@ -1048,11 +1048,7 @@ const AdminDashboard = () => {
     <div className="h-[calc(100vh-5rem)] md:h-[calc(100vh-7rem)] flex bg-[#FFF8F0]/30 overflow-hidden font-sans relative">
       
       {/* SIDEBAR (250px) */}
-      <aside className={`
-        fixed inset-y-0 left-0 z-30 w-64 bg-[#111111] text-stone-300 flex flex-col justify-between shrink-0 shadow-2xl border-r border-[#FFC107]/10 transition-transform duration-300 ease-in-out
-        md:relative md:translate-x-0
-        ${menuSidebarAbierto ? 'translate-x-0' : '-translate-x-full'}
-      `}>
+      <aside className={`fixed inset-y-0 left-0 z-30 w-64 bg-[#111111] text-stone-300 flex flex-col justify-between shrink-0 shadow-2xl border-r border-[#FFC107]/10 transition-transform duration-300 ease-in-out md:relative md:translate-x-0 ${menuSidebarAbierto ? 'translate-x-0' : '-translate-x-full'}`}>
         <div className="flex flex-col">
           {/* Header del sidebar en móvil (para cerrar) */}
           <div className="flex md:hidden items-center justify-between p-4 border-b border-[#FFC107]/10 bg-black/20">
