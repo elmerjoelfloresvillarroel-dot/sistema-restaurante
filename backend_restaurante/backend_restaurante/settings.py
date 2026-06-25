@@ -77,18 +77,12 @@ TEMPLATES = [
 WSGI_APPLICATION = 'backend_restaurante.wsgi.application'
 
 
-# Database
-# https://docs.djangoproject.com/en/6.0/ref/settings/#databases
+import dj_database_url
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'restaurante_cenas_db',
-        'USER': 'postgres',
-        'PASSWORD': '00005',
-        'HOST': '127.0.0.1',
-        'PORT': '5432',
-    }
+    'default': dj_database_url.config(
+        default='postgresql://postgres:00005@127.0.0.1:5432/restaurante_cenas_db'
+    )
 }
 
 
