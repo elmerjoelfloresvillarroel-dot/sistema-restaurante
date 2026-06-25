@@ -1,0 +1,24 @@
+# Entornos virtuales y dependencias gigantes
+.venv/
+.node/
+node_modules/
+
+# Archivos de compilación de React
+dist/
+
+# Caché de Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Archivos del sistema y del editor
+.idea/
+.vscode/
+.gemini/
+.agents/
+.DS_Store
+Thumbs.db
+
+# Mantener db.sqlite3 ignorado por seguridad (usamos Postgres)
+db.sqlite3

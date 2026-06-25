@@ -1,0 +1,21 @@
+{
+    "nombre_restaurante": "La reconciliación",
+    "titulo_hero": "BIENVENIDOS AL RESTAURANTE",
+    "descripcion_hero": "\"Ven y disfruta de los mejores sabores de la ciudad. Te ofrecemos pollo a la canasta, pollo broaster, alitas crocantes, salchipollos, hamburguesas, lomitos, picocas de pollo y salchipapas, preparados al instante con ingredientes frescos y el toque especial que nos distingue.\"",
+    "horario": "Lun - domingo 18:00 - 23:00",
+    "direccion": "AV. Remberto Prado-Segundo anillo al lado del chiringuito",
+    "color_tema": "blue",
+    "telefono": "+591 74653073",
+    "tiempo_entrega": "25 min",
+    "rating": "4.8",
+    "link_facebook": "https://facebook.com",
+    "link_whatsapp": "https://wa.me/59177889900",
+    "link_instagram": "https://instagram.com",
+    "link_tiktok": "https://tiktok.com",
+    "horario_semana": "18:00 - 23:00",
+    "horario_sabado": "no hay atención",
+    "horario_domingo": "12:00 -14:00",
+    "esta_abierto": true,
+    "producto_destacado_1": "26",
+    "producto_destacado_2": "25"
+}
