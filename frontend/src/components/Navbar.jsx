@@ -199,10 +199,11 @@ const Navbar = () => {
             <div className="flex items-center gap-2 select-none">
               <Link 
                 to="/" 
-                className="flex items-center gap-2 px-3.5 py-2 sm:px-5 sm:py-2.5 rounded-xl text-[10px] sm:text-xs font-black text-[#111111] bg-[#ffc107] hover:bg-amber-400 active:scale-95 shadow-md transition-all uppercase tracking-wider whitespace-nowrap"
+                className="flex items-center gap-1.5 px-3 py-1.5 sm:px-5 sm:py-2.5 rounded-xl text-[10px] sm:text-xs font-black text-[#111111] bg-[#ffc107] hover:bg-amber-400 active:scale-95 shadow-md transition-all uppercase tracking-wider whitespace-nowrap"
               >
                 <Home className="w-3.5 h-3.5 sm:w-4 h-4" />
-                <span>Volver al Inicio</span>
+                <span className="hidden sm:inline">Volver al Inicio</span>
+                <span className="sm:hidden">Inicio</span>
               </Link>
             </div>
           ) : isAdminPage ? (
