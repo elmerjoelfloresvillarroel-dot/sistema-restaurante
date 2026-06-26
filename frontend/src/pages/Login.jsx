@@ -63,25 +63,25 @@ const Login = () => {
   };
 
   return (
-    <div className="min-h-[85vh] flex items-center justify-center px-4 sm:px-6 py-12 selection:bg-[#b71c1c] selection:text-white">
+    <div className="min-h-[calc(100vh-5rem)] md:min-h-[calc(100vh-7rem)] flex items-center justify-center px-4 py-8 sm:py-12 selection:bg-[#b71c1c] selection:text-white">
       {/* Container Box with soft modern drop shadow & rounded-3xl borders */}
-      <div className="bg-white rounded-[28px] shadow-2xl overflow-hidden max-w-md w-full border border-stone-250/40 hover:shadow-3xl hover:translate-y-[-2px] transition-all duration-300 animate-in fade-in zoom-in-95 duration-250">
+      <div className="bg-white rounded-3xl shadow-2xl overflow-hidden max-w-md w-full border border-stone-250/40 hover:shadow-3xl hover:translate-y-[-2px] transition-all duration-300 animate-in fade-in zoom-in-95 duration-250">
         
         {/* ════ CABECERA DEGRADADA PREMIUM ════ */}
         <div 
           style={{ background: 'linear-gradient(135deg, #7A0000, #B71C1C, #D32F2F)' }}
-          className="px-8 py-10 text-center text-white relative flex flex-col items-center"
+          className="px-6 py-8 sm:px-8 sm:py-10 text-center text-white relative flex flex-col items-center"
         >
           {/* Real-time restaurant open/closed status indicator */}
           {config && (
-            <div className="absolute top-4 right-4 z-10">
+            <div className="absolute top-3 right-3 sm:top-4 sm:right-4 z-10">
               {config.esta_abierto ? (
-                <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/20 text-[9px] font-black uppercase tracking-wider">
+                <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 sm:px-3 sm:py-1 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/20 text-[8px] sm:text-[9px] font-black uppercase tracking-wider">
                   <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
                   Abierto
                 </span>
               ) : (
-                <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-red-500/20 text-red-300 border border-red-500/20 text-[9px] font-black uppercase tracking-wider">
+                <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 sm:px-3 sm:py-1 rounded-full bg-red-500/20 text-red-300 border border-red-500/20 text-[8px] sm:text-[9px] font-black uppercase tracking-wider">
                   <span className="w-1.5 h-1.5 rounded-full bg-red-500" />
                   Cerrado
                 </span>
@@ -90,20 +90,20 @@ const Login = () => {
           )}
 
           {/* Logo Brand Frame */}
-          <div className="w-12 h-12 rounded-2xl bg-white/10 border border-white/20 flex items-center justify-center shadow-lg mb-3.5 animate-bounce">
-            <ChefHat className="w-6 h-6 text-[#ffc107]" />
+          <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl sm:rounded-2xl bg-white/10 border border-white/20 flex items-center justify-center shadow-lg mb-3.5 animate-bounce">
+            <ChefHat className="w-5.5 h-5.5 sm:w-6 sm:h-6 text-[#ffc107]" />
           </div>
 
-          <h1 className="text-xl sm:text-2xl font-black font-serif tracking-tight uppercase text-white leading-tight">
+          <h1 className="text-lg sm:text-2xl font-black font-serif tracking-tight uppercase text-white leading-tight">
             LA RECONCILIACIÓN
           </h1>
-          <p className="text-[10px] sm:text-xs font-black uppercase tracking-widest text-[#ffc107] mt-1.5">
+          <p className="text-[9px] sm:text-xs font-black uppercase tracking-widest text-[#ffc107] mt-1.5">
             Sistema Integral de Gestión Restaurante
           </p>
         </div>
 
         {/* ════ FORMULARIO Y CAMPOS DE TEXTO ════ */}
-        <div className="p-8 space-y-6 bg-white">
+        <div className="p-6 sm:p-8 space-y-5 sm:space-y-6 bg-white">
           
           {/* Error Message Box */}
           {error && (
